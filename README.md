@@ -1,7 +1,9 @@
 # WenTheme_obsdian-css
-![主题预览](PixPin_2026-04-24_11-08-37.png)
+
 > 🎉 **全新 Obsidian 主题「WenTheme」正式发布！**  
 > 以「精致视觉 + 实用体验」为核心，为笔记创作打造兼具美感与效率的沉浸式环境。完美适配亮/暗双模式，覆盖从界面布局到文本样式的全场景自定义需求。
+
+![主题预览](PixPin_2026-04-24_11-08-37.png)
 
 ### 1. 丰富配色，随心切换🎨  
 - **浅色主题 8 种风格**：熏衣紫（默认）、苔藓绿、潮汐蓝、活力橙、胭脂、青屿、拿铁、水墨，清新雅致，适配日间明亮阅读；  
@@ -43,6 +45,13 @@
 
 ###### **感谢所有测试用户的反馈与建议！如有问题或需求，欢迎留言交流。**  
 
+```
+🚀 WenTheme | 灵动交互・实用至上  
+✅ 极致灵动交互：选择框、滚动条、代码块等全维度动态反馈，操作丝滑有呼应；  
+✅ 多效 CSS 加持：标题/表格/图片/排版全优化，自定义开关适配不同场景；  
+✅ 舒适实用兼备：兼顾视觉美感与创作效率，让笔记编辑更顺手、更舒心。
+```
+
 ### 📢 写给各位小伙伴的一封信
 
 大家好！我是本主题的作者。
@@ -70,10 +79,3 @@ I’d like to make two small requests to everyone:
 2. Translations needed! If there’s anyone kind and fluent in English (or other languages) willing to help translate the theme into more languages, that would be an absolute lifesaver.
 
 The beauty of open source is that we can all come together and make something better. Thank you to everyone who took the time to read this, and an even bigger thank you to those willing to lend a hand! ✨
-
-```
-🚀 WenTheme | 灵动交互・实用至上  
-✅ 极致灵动交互：选择框、滚动条、代码块等全维度动态反馈，操作丝滑有呼应；  
-✅ 多效 CSS 加持：标题/表格/图片/排版全优化，自定义开关适配不同场景；  
-✅ 舒适实用兼备：兼顾视觉美感与创作效率，让笔记编辑更顺手、更舒心。
-```
