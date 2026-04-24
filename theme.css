@@ -1,0 +1,4444 @@
+/* @settings
+name: 📚 Wen's Theme
+id: Wen's-Theme
+settings:
+-
+  id: ZhuTiFG
+  title: ✨主题配色
+  type: heading
+  level: 1
+  collapsed: true
+-
+  id: color-scheme-options
+  title: 浅色主题
+  type: class-select
+  allowEmpty: false
+  default: color-scheme-options-default
+  options:
+  -
+    label: 熏衣紫
+    value: color-scheme-options-default
+  -
+    label: 苔藓绿
+    value: yanse1
+  -
+    label: 潮汐蓝
+    value: yanse2
+  -
+    label: 活力橙
+    value: yanse3
+  -
+    label: 胭脂
+    value: yanse4
+  -
+    label: 青屿
+    value: yanse5
+  -
+    label: 拿铁
+    value: yanse6
+  -
+    label: 水墨
+    value: yanse7
+-
+  id: color-scheme-options-dark
+  title: 深色主题
+  type: class-select
+  allowEmpty: false
+  default: color-scheme-options-default
+  options:
+  -
+    label: 暮霭紫
+    value: color-scheme-options-default
+  -
+    label: 静谧绿
+    value: yanse-S-1
+  -
+    label: 玄溟蓝
+    value: yanse-S-2
+  -
+    label: 余辉橙
+    value: yanse-S-3 
+  -
+    label: 樱花粉
+    value: yanse-S-4
+  -
+    label: 夜涌青
+    value: yanse-S-5
+  -
+    label: 云石灰
+    value: yanse-S-6
+-
+  id: JieMie
+  title: 一、界面
+  type: heading
+  level: 1
+  collapsed: true
+-
+  id: JieMieYS
+  title: 1.界面样式
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: sskmh
+  title: 关闭 搜索框美化
+  description: 启用后将恢复 Obsidian 默认搜索框样式
+  type: class-toggle
+  default: false
+-
+  id: CommpactTabs
+  title: 启用 按钮样式Tab栏
+  description: 将标签页切换为按钮样式
+  type: class-toggle
+  default: false
+-
+  id: tmztl 
+  title: 启用 半透明状态栏
+  description: 状态栏半透明，鼠标悬停时恢复不透明
+  type: class-toggle
+  default: false
+-
+  id: tcdh
+  title: 启用 弹窗动画
+  description: 为弹窗添加平滑的动画效果
+  type: class-toggle
+  default: false
+-
+  id: wjj
+  title: 2.文件夹
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: chwjj
+  title: 移除 彩虹文件夹样式
+  description: 启用后文件夹恢复为默认背景色
+  type: class-toggle
+  default: false
+-
+  id: chwjjmb
+  title: 启用 彩虹文件夹描边
+  description: 为彩虹文件夹添加彩色边框效果
+  type: class-toggle
+  default: false
+-
+  id: file-icon-remove
+  title: 启用 自定义文件图标
+  description: 根据文件类型显示不同的图标（如PDF、图片等）
+  type: class-toggle
+  default: false
+-
+  id: Qdy
+  title: 3.自定义启动加载页面 (文字效果)
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: loading-diy-text
+  title: Custom Text
+  title.zh: 自定义文字
+  description: 修改启动页面显示的文字内容
+  type: variable-text
+  default: "'灵魂共鸣，心跳同频'"
+-
+  id: font-loading-text
+  title: 字体
+  description: 设置加载文字的字体
+  type: variable-text
+  default: 无
+-
+  id: font-size-loading-diy-text
+  title: 字体大小
+  description: 设置加载文字的字体大小
+  type: variable-text
+  default: 4em
+-
+  id: loading-diy-text-color
+  title: 字体颜色
+  description: 设置加载文字的显示颜色
+  type: variable-themed-color
+  opacity: true
+  format: hex
+  default-light: '#'
+  default-dark: '#'
+-
+  id: PaiBan
+  title: 二、排版与样式
+  type: heading
+  level: 1
+  collapsed: true
+-
+  id: BiaoTi
+  title: 1.编辑器
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: albus-doc-property-switch
+  title: 
+  title.zh: 文档属性显示方式
+  type: class-select
+  allowEmpty: false
+  default: doc--hide
+  options:
+      - label: 阅读模式下隐藏
+        value: doc--hide
+      - label: 缩小为悬浮球
+        value: doc--ball
+      - label: 不隐藏属性
+        value: doc--no
+-
+  id: bjq-lankuan
+  title: 编辑区栏宽
+  description: 设置编辑区域的最大宽度
+  type: variable-text
+  default: 41rem
+-
+  id: kbhyh
+  title: 关闭 空白行优化 (预览视图)
+  description: 预览模式下保留原有空白行间距
+  type: class-toggle
+  default: false
+-
+  id: blank-line-tweak
+  title: 关闭 空白行优化 (编辑视图)
+  description: 编辑模式下保留原有空白行间距
+  type: class-toggle
+  default: false
+-
+  id: ZiTys
+  title: 2.字体样式
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: xieti
+  title: 2.1 斜体
+  type: heading
+  level: 3
+  collapsed: false
+-
+  id: xtyy
+  title: 关闭 斜体阴影效果
+  description: 移除斜体文字的文字阴影效果
+  type: class-toggle
+  default: false
+-
+  id: xtyyxt
+  title: 启用 悬停斜体阴影
+  description: 移除斜体文字的文字阴影效果
+  type: class-toggle
+  default: false
+-
+  id: cuti
+  title: 2.2 粗体
+  type: heading
+  level: 3
+  collapsed: false
+-
+  id: ctblx
+  title: 关闭 显示粗体波浪线
+  description: 移除粗体文字下方的粗体波浪线
+  type: class-toggle
+  default: false
+-
+  id: xfctblx
+  title: 启用 悬停显示波浪线
+  description: 鼠标悬停时才显示粗体波浪线
+  type: class-toggle
+  default: false
+-
+  id: BiaoTi
+  title: 3.标题
+  type: heading
+  level: 2
+  collapsed: true
+- 
+  id: h16
+  title: 关闭 标题等级H1~H6
+  description: 隐藏标题前的 H1、H2 等等级标签
+  type: class-toggle
+  default: false
+-
+  id: btzsq
+  title: 关闭 标题指示器
+  description: 隐藏标题左侧的彩色指示条
+  type: class-toggle
+  default: false
+-
+  id: btxtzts-yd-ld
+  title: 关闭 灵动标题
+  description: 禁用标题悬停时的轻微移动效果
+  type: class-toggle
+  default: false
+-
+  id: btxtzts-yd
+  title: 关闭 悬停高亮标题
+  description: 禁用标题悬停时的颜色变化
+  type: class-toggle
+  default: false
+-
+  id: YNBiaoTi
+  title: 4.页内标题
+  type: heading
+  level: 2
+  collapsed: true
+- 
+  id: ycynbt
+  title: 隐藏页内标题
+  description: 完全隐藏笔记的页内标题
+  type: class-toggle
+  default: false
+- 
+  id: bjbtjz 
+  title: 左对齐页内标题
+  description: 将页内标题设置为左对齐（默认居中）
+  type: class-toggle
+  default: false
+-
+  id: inline-title-divider-remove
+  title: 移除 页内标题分隔线
+  description: 隐藏页内标题下方的分割线
+  type: class-toggle
+  default: false
+- 
+  id: LianJie
+  title: 5.链接
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: nwltb
+  title: 移除 链接图标
+  description: 隐藏内外部链接的图标
+  type: class-toggle
+  default: false
+-
+  id: lxtbj
+  title: 移除 链接悬停背景
+  description: 隐藏链接悬停时的背景色
+  type: class-toggle
+  default: false
+-
+  id: Table
+  title: 6.其他
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: shjc
+  title: 表头字体加粗
+  description: 启用表格表头的加粗样式
+  type: class-toggle
+  default: false
+-
+  id: ul-marker-restore
+  title: 列表前缀优化
+  description: 优化无序列表的项目符号样式
+  type: class-toggle
+  default: false
+- 
+  id: yuancheckbox
+  title: 圆形复选框
+  description: 将任务复选框改为圆形
+  type: class-toggle
+  default: false
+-
+  id: yyBeiJing
+  title: 图片外发光效果
+  description: 鼠标悬停时为图片添加外发光
+  type: class-toggle
+  default: false
+-
+  id: yykmh 
+  title: 移除 引用块美化
+  description: 使用 Obsidian 默认的引用块样式
+  type: class-toggle
+  default: false
+-
+  id: CSS
+  title: 三、内置 CSS 片段
+  type: heading
+  level: 1
+  collapsed: true
+-
+  id: pangpi
+  title: 1.旁注
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: shuoming
+  title: 旁注语法
+  description: 左侧边注`> [!NOTE|aside-l]`<br>右侧旁注`> [!NOTE|aside-r]`
+  type: info-text
+  markdown: true
+-
+  id: top-sidenote-callout-title
+  title: 横向显示旁注
+  description: 将旁注标题改为横向布局
+  type: class-toggle
+  default: false
+-
+  id: aside-width
+  title: 旁注宽度
+  description: 设置旁注的宽度
+  type: variable-number-slider
+  default: 200
+  min: 150
+  max: 300
+  step: 10
+  format: px
+-
+  id: aside-offset
+  title: 旁注与正文的间距
+  description: 设置旁注与正文之间的距离
+  type: variable-number-slider
+  default: 6
+  min: 0
+  max: 50
+  step: 1
+  format: px
+-
+  id: CSScom
+  title: 2.其他片段
+  type: heading
+  level: 2
+  collapsed: true
+-
+  id: emojicallout
+  title: Emoji Callout
+  description: 为 Callout 添加 Emoji 背景图案
+  type: class-toggle
+  default: false
+-
+  id: xhxwk
+  title: 下划线挖空
+  description: 下划线内容默认隐藏，悬停时显示
+  type: class-toggle
+  default: false
+-
+  id: xsdmhg
+  title: 显示代码行号
+  description: 为代码块添加行号显示
+  type: class-toggle
+  default: false
+- 
+  id: xtfddmk
+  title: 悬停放大代码块
+  description: 鼠标悬停时放大代码块
+  type: class-toggle
+  default: false
+-
+  id: fdyyk
+  title: 悬停放大引用块
+  description: 鼠标悬停时放大引用块
+  type: class-toggle
+  default: false
+-
+  id: fgxfg
+  title: 将分割线作为PDF分页符
+  description: 分割线在导出 PDF 时作为分页标记
+  type: class-toggle
+  default: false
+-
+  id: sming
+  title: 2.部分说明
+  type: heading
+  level: 2
+  collapsed: false
+-
+  id: shuoming
+  title:
+  description: 🎨<br>暗色主题图片反色:`![[图片.png|dark]]`<br>Blue Topaz 主题的全套图片排版方案`![[图片.png|对其方式or行内显示|图片大小]]`<br>对齐方式：left、right、center 或 L、R、C<br>行内显示：inl、inlL、inlR<br>图片自适应(cssclasses：img-grid)：+grid<br><br>🎉<br>cssclasses：<br>笔记页面烟花：fireworks<br>笔记全宽显示：fullwidth<br>网状笔记背景：grid<br>点状笔记背景：dot<br>首行缩进：indent<br>笔记文字居中：center<br>下划线挖空：xhxwk<br>隐藏页内标题：ycynbt<br>显示代码行高：xsdmhg
+  type: info-text
+  markdown: true
+*/ 
+
+/*--- Wen's Theme - 底部欢迎提示 ---
+.workspace-split.mod-root::after {
+    content: '欢迎使用 Wen\'s Theme ✨'; 
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    
+    background: rgba(255, 255, 255, 0.95); 
+    color: #333333;
+    border: 1px solid var(--text-accent, #7b68ee); 
+    
+    padding: 8px 16px; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.15);
+    
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    z-index: 1;
+    
+     修改动画：总时长，延迟，结束后保持最终状态(forwards) 
+    animation: wen-auto-hide 7s ease-out forwards;
+}
+ 暗色主题适配 
+body.theme-dark .workspace-split.mod-root::after {
+    background: rgba(30, 30, 30, 0.85); 
+    backdrop-filter: blur(8px);
+    color: #e0e0e0;
+    border: 1px solid rgba(201, 201, 201, 0.15);
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.6), 
+                0 0 10px rgba(0, 0, 0, 0.4); 
+}
+ 动画定义 
+@keyframes wen-auto-hide {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    4% {  约0.5秒处完成进入 
+        opacity: 1;
+        transform: translateY(0);
+    }
+    96% {  约12秒处开始准备消失 
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {  12.5秒处完全隐藏 
+        opacity: 0;
+        transform: translateY(10px);
+         关键：虽然opacity为0，但forwards会保持这个状态 
+    }
+}
+*/
+
+/* --color-accent */
+.theme-light {
+  --accent-h: 260;
+  --accent-s: 60%;
+  --accent-l: 67%;
+
+  --background-primary: #fafafa;
+  --background-primary-alt: #eeeeee;
+  --background-secondary: #fafafa;
+  --background-secondary-alt: #f5f5f5;
+  
+  --background-accent: #fff;
+  --background-modifier-border: #dbdbdc;
+  --background-modifier-form-field: #fff;
+  --background-modifier-form-field-highlighted: #fff;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modzifier-success: #00ff77;
+  --background-modifier-error: #e68787;
+  --background-modifier-error-rgb: 230, 135, 135;
+  --background-modifier-error-hover: #FF9494;
+  /* --text-accent: #3c95e7;  内外链颜色 */
+  /* --text-accent-hover: #097add;  内外链鼠标悬停颜色 */
+  --text-normal: #383a42;
+  --text-muted: #525252; /* 一些按钮和字体的颜色 */
+  --text-faint: #999999;
+  --text-error: #e75545;
+  --text-error-hover: #f86959;
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  /*--text-selection: rgba(0, 122, 255, 0.15); 鼠标选中文本的高亮颜色 */
+  --text-on-accent: #f2f2f2;
+  --interactive-normal: #eaeaeb;
+  --interactive-hover: #dbdbdc;
+  --interactive-accent-rgb: 21, 146, 255;
+  --interactive-accent-hover: hsl(var(--accent-h), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 4%));
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  --panel-border-color: #dbdbdc;
+
+  /* 笔记文件被选中时的背景颜色 */
+  --nav-item-background-active: color-mix(in srgb, var(--color-accent) 20%, white 70%) !important; 
+
+  --background-modifier-message: var(--color-accent); /* 提示消息背景色 */
+
+  --text-highlight-bg: #f7e5b1; /* 界面某部分的高亮颜色 */
+
+  --tag-color: var(--color-accent);
+  --tag-background: #ebebeb;
+  --tag-color-hover: var(--color-accent);
+  --tag-background-hover: #e6e6e6;
+  --tag-padding-x: 5px;
+  --tag-padding-y: 3.2px;
+  --tag-radius: 6px;
+
+/* 显示边框与分割线 
+    需要隐藏则将值设为 transparent */
+  --tab-outline-color: #e6e6e680; 
+  --divider-color: #e6e6e680;
+
+  --my-link-hover-bg: rgba(196, 196, 196, 0.25);
+  --my-ext-link-hover-bg: rgba(196, 196, 196, 0.25);
+}
+
+
+.theme-dark {
+  --accent-h: 260;
+  --accent-s: 45%;
+  --accent-l: 58%;
+  
+  --background-primary: #141414;
+  --background-primary-alt: #1f1f1f;
+  --background-secondary: #141414;
+  --background-secondary-alt: #1a1a1a;
+  
+  --background-accent: #000;
+  --background-modifier-border: #252525;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #539126;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  /* --text-accent: #61afef; 内外链颜色 */
+  /* --text-accent-hover: #70bdfc; 内外链鼠标悬停颜色 */
+  --text-normal: #dcddde;
+  --text-muted: #cccccc;
+  --text-faint: rgb(81, 86, 99);
+  --text-error: #e16d76;
+  --text-error-hover: #c9626a;
+  --text-highlight-bg: rgba(255, 208, 0, 0.4);
+  /* --text-selection: rgba(0, 122, 255, 0.2); 鼠标选中文本的高亮颜色 */
+  --text-on-accent: #dcddde;
+  --interactive-normal: #20242b;
+  --interactive-hover: #353b47;
+  --interactive-accent-hover: hsl(var(--accent-h), calc(var(--accent-s) + 5%), calc(var(--accent-l) - 10%));
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --panel-border-color: #18191e;
+
+  --background-modifier-hover: hsla(var(--accent-h), calc(var(--accent-s) - 35%), var(--accent-l), 0.06);
+  --divider-color-hover: #404754;
+
+  /* 笔记文件被选中时的背景颜色 */
+  --nav-item-background-active: color-mix(in srgb, var(--color-accent) 20%, rgb(0, 0, 0) 30%) !important; 
+
+  --background-modifier-message: var(--color-accent);
+
+  --text-highlight-bg: #5c4e26; /* 界面某部分的高亮颜色 */
+
+  --tag-color: var(--color-accent);
+  --tag-background: #31313185;
+  --tag-color-hover: var(--color-accent);
+  --tag-background-hover: #44444485;
+  --tag-padding-x: 5px;
+  --tag-padding-y: 3.2px;
+  --tag-radius: 6px;
+
+/* 显示边框与分割线 
+    需要隐藏则将值设为 transparent */
+    --tab-outline-color: #3b3b3b21; 
+    --divider-color: #3b3b3b21;
+
+  --my-link-hover-bg: rgba(53, 53, 53, 0.61);
+  --my-ext-link-hover-bg: rgba(53, 53, 53, 0.61);
+}
+
+.theme-dark, .theme-light {
+  --ribbon-background: var(--background-primary);
+  --drag-ghost-background: #9e9e9e;
+
+  --prompt-border-color: var(--panel-border-color);
+  --modal-border-color: var(--panel-border-color);
+
+  --background-modifier-border-hover: var(--interactive-hover);
+  --background-modifier-border-focus: var(--interactive-hover);
+
+  /* --nav-item-color-active: #333333; */
+    
+  --inline-title-weight: var(--bold-weight);
+  --link-decoration: none;
+  --link-external-decoration: none;
+  --embed-padding: 0 0 0 var(--size-4-4);
+
+  --checklist-done-decoration: inherit; /* 去掉选择框后面文字的删除线 */
+  --checklist-done-color: var(--text-faint) !important; /* 选择框后面文字的颜色 */
+
+}
+
+/* body.yanse .theme-light, 
+body.yanse.theme-light {
+  --accent-h: 143;
+  --accent-s: 34%;
+  --accent-l: 45%;
+}*/
+body.yanse1.theme-light {
+  --accent-h: 143;
+  --accent-s: 34%;
+  --accent-l: 52%;
+}
+body.yanse2.theme-light {
+  --accent-h: 200;
+  --accent-s: 65%;
+  --accent-l: 52%;
+}
+body.yanse3.theme-light {
+  --accent-h: 32;
+  --accent-s: 85%;
+  --accent-l: 50%;
+}
+body.yanse4.theme-light {
+  --accent-h: 340;
+  --accent-s: 85%;
+  --accent-l: 68%;
+}
+body.yanse5.theme-light {
+  --accent-h: 166;
+  --accent-s: 52%;
+  --accent-l: 45%;
+}
+body.yanse6.theme-light {
+  --accent-h: 18;
+  --accent-s: 40%;
+  --accent-l: 55%;
+}
+body.yanse7.theme-light {
+  --accent-h: 0;
+  --accent-s: 0%;
+  --accent-l: 45%;
+}
+
+
+body.yanse-S-1.theme-dark {
+  --accent-h: 143;
+  --accent-s: 38%;
+  --accent-l: 48%;
+}
+body.yanse-S-2.theme-dark {
+  --accent-h: 200;
+  --accent-s: 60%;
+  --accent-l: 42%;
+}
+body.yanse-S-3.theme-dark {
+  --accent-h: 32;
+  --accent-s: 70%; 
+  --accent-l: 52%;  
+}
+body.yanse-S-4.theme-dark {
+  --accent-h: 340;
+  --accent-s: 72%;
+  --accent-l: 62%; 
+}
+body.yanse-S-5.theme-dark {
+  --accent-h: 165;
+  --accent-s: 62%;  
+  --accent-l: 42%;  
+}
+body.yanse-S-6.theme-dark {
+  --accent-h: 0;
+  --accent-s: 0%;  
+  --accent-l: 62%;  
+}
+
+
+/* 左侧边栏颜色
+.theme-light .workspace-ribbon.side-dock-ribbon.mod-left {
+  background-color: rgb(250, 250, 250);
+}
+
+.theme-dark .workspace-ribbon.side-dock-ribbon.mod-left {
+  background-color: rgb(17, 17, 17);
+} */
+
+
+
+/* ========================================
+一、界面
+======================================== */
+
+/* === 彩虹文件夹 === */
+
+/* 文件夹大小和圆角 */
+body:not(.chwjj) .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title {
+  padding-top: 6.5px;  
+  padding-bottom: 6px;  
+  border-radius: 8px;
+}
+
+body:not(.chwjj) .workspace-leaf-content[data-type="file-explorer"] {
+    --folder-text-opacity: 0.85;  /* 文件夹文本不透明度 */
+    --folder-sub-text-opacity: 0.7; /* 子文件夹文本不透明度 */
+  
+    /* 背景色 - 基于主题的暖色调 */
+    --folder-bg-1: rgb(219, 112, 147, 0.096);
+    --folder-bg-2: rgba(178, 34, 34, 0.096);
+    --folder-bg-3: rgb(205, 147, 92, 0.096);
+    --folder-bg-4: rgb(143, 188, 143, 0.096); 
+    --folder-bg-5: rgb(95, 158, 160, 0.096);
+    --folder-bg-6: rgb(70, 130, 180, 0.096);
+    --folder-bg-7: rgb(147, 112, 219, 0.096);
+
+    /* 子目录淡化色 */
+    --folder-sub-bg-1: rgb(219, 112, 147, 0.034);
+    --folder-sub-bg-2: rgba(178, 34, 34, 0.034);
+    --folder-sub-bg-3: rgb(205, 147, 92, 0.034);
+    --folder-sub-bg-4: rgb(143, 188, 143, 0.034);
+    --folder-sub-bg-5: rgb(95, 158, 160, 0.034);
+    --folder-sub-bg-6: rgb(70, 130, 180, 0.034);
+    --folder-sub-bg-7: rgb(147, 112, 219, 0.034);
+
+  }
+  
+/* 「只有当 .chwjj 类存在时，.chwjjmb 才显示；否则 .chwjjmb 始终隐藏」 */
+body:not(.chwjj).chwjjmb-element {
+  display: none !important;
+}
+body.chwjj body:not(.chwjj).chwjjmb-element {
+  display: block !important; /* 或 flex, grid 等 */
+}
+
+/* --- 彩虹文件夹描边效果 --- */
+
+/* 确保有边框基础 */
+body:not(.chwjj).chwjjmb .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title {
+  border: 1px solid transparent;
+}
+
+/* 顶级文件夹描边 */
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 1) > .nav-folder-title { border-color: rgba(184, 41, 88, 0.11); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 2) > .nav-folder-title { border-color: rgba(178, 34, 34, 0.11); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 3) > .nav-folder-title { border-color: rgba(167, 98, 34, 0.11); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 4) > .nav-folder-title { border-color: rgba(28, 167, 28, 0.11); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 5) > .nav-folder-title { border-color: rgba(39, 143, 146, 0.11); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 6) > .nav-folder-title { border-color: rgba(45, 99, 143, 0.11); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n)   > .nav-folder-title { border-color: rgba(110, 77, 175, 0.11); }
+
+/* 子文件夹描边（更淡） */
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 1) .tree-item-children .nav-folder-title { border-color: rgba(184, 41, 88, 0.05); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 2) .tree-item-children .nav-folder-title { border-color: rgba(178, 34, 34, 0.05); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 3) .tree-item-children .nav-folder-title { border-color:rgba(167, 98, 34, 0.05); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 4) .tree-item-children .nav-folder-title { border-color: rgba(28, 167, 28, 0.05); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 5) .tree-item-children .nav-folder-title { border-color: rgba(39, 143, 146, 0.05); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n + 6) .tree-item-children .nav-folder-title { border-color: rgba(45, 99, 143, 0.05); }
+body:not(.chwjj).chwjjmb .nav-files-container > div > .tree-item.nav-folder:nth-child(7n)   .tree-item-children .nav-folder-title { border-color: rgba(110, 77, 175, 0.05); }
+
+/* 顶级目录配色 - 根据序号循环展示7种颜色 */
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 1)
+  > .nav-folder-title {
+  background-color: var(--folder-bg-1);
+  color: var(--folder-text-1);
+  --nav-collapse-icon-color: var(--folder-text-1);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 2)
+  > .nav-folder-title {
+  background-color: var(--folder-bg-2);
+  color: var(--folder-text-2);
+  --nav-collapse-icon-color: var(--folder-text-2);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 3)
+  > .nav-folder-title {
+  background-color: var(--folder-bg-3);
+  color: var(--folder-text-3);
+  --nav-collapse-icon-color: var(--folder-text-3);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 4)
+  > .nav-folder-title {
+  background-color: var(--folder-bg-4);
+  color: var(--folder-text-4);
+  --nav-collapse-icon-color: var(--folder-text-4);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 5)
+  > .nav-folder-title {
+  background-color: var(--folder-bg-5);
+  color: var(--folder-text-5);
+  --nav-collapse-icon-color: var(--folder-text-5);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 6)
+  > .nav-folder-title {
+  background-color: var(--folder-bg-6);
+  color: var(--folder-text-6);
+  --nav-collapse-icon-color: var(--folder-text-6);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n)
+  > .nav-folder-title {
+  background-color: var(--folder-bg-7);
+  color: var(--folder-text-7);
+  --nav-collapse-icon-color: var(--folder-text-7);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+/* 顶级目录鼠标悬停颜色 */
+
+body:not(.chwjj) .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* 加深文件夹颜色 */
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 1)
+  > .nav-folder-title:hover {
+  background-color: rgb(219, 112, 147, 0.14);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 2)
+  > .nav-folder-title:hover {
+  background-color: rgba(178, 34, 34, 0.14);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 3)
+  > .nav-folder-title:hover {
+  background-color: rgba(205, 147, 92, 0.14);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 4)
+  > .nav-folder-title:hover {
+  background-color: rgb(143, 188, 143, 0.14);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 5)
+  > .nav-folder-title:hover {
+  background-color: rgb(95, 158, 160, 0.14);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 6)
+  > .nav-folder-title:hover {
+  background-color: rgb(70, 130, 180, 0.14);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n)
+  > .nav-folder-title:hover {
+  background-color: rgb(147, 112, 219, 0.14);
+}
+
+/* 子目录配色 - 继承父目录颜色但更淡 */
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 1)
+  .tree-item-children
+  .nav-folder-title {
+  background-color: var(--folder-sub-bg-1);
+  color: var(--folder-sub-text-1);
+  --nav-collapse-icon-color: var(--folder-text-1);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 2)
+  .tree-item-children
+  .nav-folder-title {
+  background-color: var(--folder-sub-bg-2);
+  color: var(--folder-sub-text-2);
+  --nav-collapse-icon-color: var(--folder-text-2);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 3)
+  .tree-item-children
+  .nav-folder-title {
+  background-color: var(--folder-sub-bg-3);
+  color: var(--folder-sub-text-3);
+  --nav-collapse-icon-color: var(--folder-text-3);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 4)
+  .tree-item-children
+  .nav-folder-title {
+  background-color: var(--folder-sub-bg-4);
+  color: var(--folder-sub-text-4);
+  --nav-collapse-icon-color: var(--folder-text-4);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 5)
+  .tree-item-children
+  .nav-folder-title {
+  background-color: var(--folder-sub-bg-5);
+  color: var(--folder-sub-text-5);
+  --nav-collapse-icon-color: var(--folder-text-5);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 6)
+  .tree-item-children
+  .nav-folder-title {
+  background-color: var(--folder-sub-bg-6);
+  color: var(--folder-sub-text-6);
+  --nav-collapse-icon-color: var(--folder-text-6);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n)
+  .tree-item-children
+  .nav-folder-title {
+  background-color: var(--folder-sub-bg-7);
+  color: var(--folder-sub-text-7);
+  --nav-collapse-icon-color: var(--folder-text-7);
+  --icon-color: var(--nav-collapse-icon-color);
+}
+
+/* 子目录鼠标悬停颜色 */
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 1)
+  .tree-item-children
+  .nav-folder-title:hover {
+  background-color: rgb(219, 112, 147, 0.06);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 2)
+  .tree-item-children
+  .nav-folder-title:hover {
+  background-color: rgba(178, 34, 34, 0.06);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 3)
+  .tree-item-children
+  .nav-folder-title:hover {
+  background-color: rgba(205, 147, 92, 0.06);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 4)
+  .tree-item-children
+  .nav-folder-title:hover {
+  background-color: rgb(143, 188, 143, 0.06);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 5)
+  .tree-item-children
+  .nav-folder-title:hover {
+  background-color: rgb(95, 158, 160, 0.06);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n + 6)
+  .tree-item-children
+  .nav-folder-title:hover {
+  background-color: rgb(70, 130, 180, 0.06);
+}
+
+body:not(.chwjj) .nav-files-container
+  > div
+  > .tree-item.nav-folder:nth-child(7n)
+  .tree-item-children
+  .nav-folder-title:hover {
+  background-color: rgb(147, 112, 219, 0.06);
+}
+
+
+
+/*--- 透明化状态栏 鼠标悬停显示 ---*/
+.tmztl .status-bar {
+  /* background-color: var(--background-primary); */
+  border-width: 0;
+  opacity: .5;
+  transition: all .2s linear;
+}
+
+.tmztl .status-bar:hover {
+  opacity: 1;
+}
+
+
+/*--- 搜索框美化 ---*/
+
+body {
+  /*搜索框边框颜色*/
+  --search-border-color: var(--color-accent);
+
+  /*搜索框距离页面顶部距离*/
+  --search-top: calc(var(--header-height) + var(--size-4-4));
+  
+  /*搜索框距离页面右侧距离*/
+  --search-right: var(--size-4-4);
+  
+  /*输入框选中时阴影颜色*/
+  --background-modifier-border-focus: hsl(
+    var(--accent-h),
+    calc(var(--accent-s) - 4%),
+    calc(var(--accent-l) + 4%)
+  );
+}
+
+body:not(.sskmh) .obsidian-search-match-highlight {
+  background-color: var(--background-secondary);
+}
+
+body:not(.sskmh) .document-search-container {
+  position: absolute;
+  top: var(--search-top);
+  right: var(--search-right);
+  border-radius: var(--size-4-2);
+  padding: var(--size-2-3) var(--size-4-1) var(--size-2-3) 0;
+  height: fit-content;
+  border: 2px solid var(--search-border-color);
+  box-shadow: var(--shadow-s);
+  margin: 0;
+}
+body:not(.sskmh) .document-search-container :is(.document-search, .document-replace) {
+  align-items: center;
+  padding: 0;
+}
+/*.document-search-container :is(.document-search, .document-replace) button:nth-child(3) {
+  display: none;
+}*/
+body:not(.sskmh) .document-search-container :is(.document-search-input, .document-replace-input) {
+  margin-left: 6px;
+}
+body:not(.sskmh) .document-search-container .document-search-close-button {
+  position: relative;
+  top: 0;
+}
+
+
+/*=== 按钮标签页样式 ===*/
+
+/*
+    Commpact Tabs
+    Cleaner, smaller tabs with hidden buttons
+    https://github.com/replete/obsidian-minimal-theme-css-snippets
+*/
+
+/* 活动标签页描边 */
+.CommpactTabs.theme-light .workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+  border: 2px solid color-mix(in srgb, var(--color-accent) 35%, white 90%);;
+}
+.CommpactTabs.theme-dark .workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+  border: 2px solid color-mix(in srgb, var(--color-accent) 35%, white 2%);;
+}
+
+.CommpactTabs .workspace .mod-root .workspace-tab-header-container-inner {
+  padding:0px 0 0px 5px;
+  margin: 5px 0 2px -2px;
+}
+.CommpactTabs .workspace .mod-root .workspace-tab-header.is-active {
+  background: none;
+  box-shadow: none;
+}
+.CommpactTabs .workspace .mod-root .workspace-tab-header.is-active::before, 
+.CommpactTabs .workspace .mod-root .workspace-tab-header.is-active::after {
+  display:none;
+}
+
+.CommpactTabs.theme-light .workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+  background: #fcfcfc; /* 标签页被选中时的颜色 */
+}
+
+.CommpactTabs.theme-dark .workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+  background: rgb(22, 22, 22); /* 标签页被选中时的颜色 */
+}
+
+/* 
+.workspace .mod-root .workspace-tab-header-inner::after {
+  display:none;
+}*/
+
+/* Hide buttons until hover
+.CommpactTabs .workspace .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button,
+.CommpactTabs .workspace .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-status-icon {
+  opacity:0;
+} */
+.CommpactTabs .workspace .mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button,
+.CommpactTabs .workspace .mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-status-icon {
+  opacity:1;
+}
+
+/* Less prominent pinned icon */
+.CommpactTabs .workspace .mod-root .workspace-tab-header.is-active .workspace-tab-header-status-icon {
+  opacity:0.6 !important;
+}
+
+/* Fade graphic to make hover close button look less harsh */
+.CommpactTabs .workspace .mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button::before {
+  content:'';
+  display:block;
+  position:absolute;
+  background:linear-gradient(to right, transparent, var(--bg2)) !important;
+  right:100%;
+  height:1em;
+  width: 1em;
+  pointer-events:none;
+}
+
+/* Smaller buttons */
+.CommpactTabs .workspace .mod-root .workspace-tab-header-inner-close-button,
+.CommpactTabs .workspace .mod-root .workspace-tab-header-status-icon {
+  transform:scale(0.9) translate(2px,1px);
+  transform-origin:center;
+}
+
+/* Smaller new tab button */
+.CommpactTabs .workspace .mod-root  .workspace-tab-header-new-tab {
+  margin-left:4px;
+}
+.CommpactTabs .workspace .mod-root .workspace-tab-header-new-tab .clickable-icon {
+  transform:scale(0.8) translate(0,1px);
+}
+
+.CommpactTabs .workspace .mod-root .workspace-tab-header {
+  /* width:auto;
+  flex: none;
+  flex-shrink: 1;
+  max-width:25% */
+}
+
+
+/*--- 自定义编辑区栏宽 ---*/
+
+body {
+  --bjq-lankuan: 41rem;
+  --file-line-width: var(--bjq-lankuan);
+}
+
+
+/*--- 弹窗动画 ---*/
+
+@keyframes unifiedModalEnter {
+  0% {
+    opacity: 0;
+    transform: scale(0.94) translateY(12px);
+    filter: blur(5px);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.01) translateY(-1px);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+:root {
+  --modal-anim-duration: 0.3s;
+  --modal-anim-easing: cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+
+.tcdh .modal-container {
+  animation: unifiedModalEnter var(--modal-anim-duration) var(--modal-anim-easing) forwards;
+  transform-origin: center center;
+}
+
+
+
+/*--- 启动加载页面 ---*/
+
+body {
+  /*============加载页面============*/
+  --loading-diy-text: "灵魂共鸣，心跳同频";
+  --loading-diy-text-color: var(--text-normal);
+  --loading-page-custom-gif-caption: " ";
+  --loading-page-custom-gif-caption-alt: " ";
+  --loading-page-custom-gif-url: url(https://);
+  --loading-page-custom-gif-url-alt: url(https://cdn.dribbble.com/users/53712/screenshots/9948351/media/2397850c7727f8e70b0ec50b5a83fe76.gif);
+  --loading-text-before: "❀✿";
+  --loading-text-after: "✿❀";
+  --loading-add-text-color: #d47e86;
+  --loading-add-text-color-alt: #a4e39c;
+  --font-loading-text: ;
+  --font-size-loading-diy-text: 4em;
+}
+
+/* 默认加载页 */
+body:not(:is(.default-loading-page, .is-popout-window)) .progress-bar-message {
+  visibility: hidden;
+}
+
+body:not(.default-loading-page).loading-page-style-default .progress-bar-message:before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: relative;
+  animation: shape 2.5s infinite alternate;
+  visibility: visible !important;
+  display: block;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}
+
+/* 加载画面的文字 */
+body:not(.default-loading-page).loading-add-icons .progress-bar-message::before,
+body:not(.default-loading-page).loading-add-icons .progress-bar-message::after {
+  all: initial;
+  color: var(--loading-add-text-color);
+  animation: 2s infinite alternate;
+  animation-name: gradientChange;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}
+
+@keyframes gradientChange {
+  100% {
+    color: var(--loading-add-text-color-alt);
+  }
+}
+
+body:not(.default-loading-page) .progress-bar-message::before {
+  all: initial;
+  content: var(--loading-diy-text);
+  font-family: var(--font-loading-text) !important;
+  visibility: visible !important;
+  display: block;
+  font-size: var(--font-size-loading-diy-text);
+  line-height: 2;
+  color: var(--loading-diy-text-color);
+}
+
+
+/* 自定义文件图标 */
+
+.file-icon-remove .workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon svg.svg-icon,
+.file-icon-remove .workspace-leaf-content:is([data-type="bookmarks"], [data-type="file-explorer"]) .tree-item-icon.collapse-icon svg.svg-icon {
+    color: transparent;
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon,
+.file-icon-remove .workspace-leaf-content:is([data-type="bookmarks"], [data-type="file-explorer"]) .tree-item-icon.collapse-icon {
+    background-color: currentColor;
+    opacity: var(--icon-opacity);
+}
+
+body:not(.chwjj).chwjjmb  .workspace-leaf-content[data-type="tag"] .tree-item-self:not(:has(>.tree-item-icon.collapse-icon)):before,
+body:not(.chwjj).chwjjmb  .workspace-leaf-content[data-type="file-explorer"] :is(.nav-file-title, .nav-folder.mod-root>.nav-folder-title)::before {
+  margin-left: calc(-0.95 * var(--size-4-5)) !important;
+} /* 对启用彩虹文件夹的图标距离补偿 */
+
+.file-icon-remove .workspace-leaf-content[data-type="tag"] .tree-item-self:not(:has(>.tree-item-icon.collapse-icon)):before,
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] :is(.nav-file-title, .nav-folder.mod-root>.nav-folder-title)::before {
+    content: " ";
+    position: absolute;
+    margin-left: calc(-1 * var(--size-4-5));
+    width: var(--size-4-4);
+    height: var(--size-4-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: var(--icon-opacity);
+    background-color: currentColor;
+    flex: 0 0 auto;
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .nav-folder.mod-root>.nav-folder-title::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M14 12.8V3.2c0-.884-.264-1.2-1-1.2H3c-.736 0-1 .316-1 1.2v9.6c0 .884.264 1.2 1 1.2h10c.736 0 1-.316 1-1.2Z'/%3e%3cpath d='M9.978 7.04a2 2 0 1 1-3.956.587 2 2 0 0 1 3.956-.587ZM8 9.333v2m6-6.666h1m-1 6h1'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .tree-item-icon.collapse-icon,
+.file-icon-remove .workspace-leaf-content[data-type="bookmarks"] .tree-item-icon.collapse-icon {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M4 9.333 4.967 7.4a1.333 1.333 0 0 1 1.193-.733h7.173m0 0a1.333 1.333 0 0 1 1.294 1.666l-1.034 4a1.333 1.333 0 0 1-1.293 1H2.667A1.333 1.333 0 0 1 1.333 12V3.333C1.333 2.6 1.933 2 2.667 2h2.62a1.333 1.333 0 0 1 1.106.6l.547.8a1.333 1.333 0 0 0 1.107.6H12a1.333 1.333 0 0 1 1.333 1.333v1.334Z'/%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .is-collapsed .tree-item-icon.collapse-icon,
+.file-icon-remove .workspace-leaf-content[data-type="bookmarks"] .is-collapsed .tree-item-icon.collapse-icon {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M2.667 13.333h10.666A1.333 1.333 0 0 0 14.667 12V5.333A1.333 1.333 0 0 0 13.333 4H8.047a1.333 1.333 0 0 1-1.107-.6l-.547-.8A1.333 1.333 0 0 0 5.287 2h-2.62a1.333 1.333 0 0 0-1.334 1.333V12c0 .733.6 1.333 1.334 1.333Z'/%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .nav-file-title::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v10.666A1.333 1.333 0 0 0 4 14.667h8a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333Z'/%3e%3cpath d='M9.333 1.333v4h4'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".canvas"]::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M6 2H2.667A.667.667 0 0 0 2 2.667v4.666c0 .369.298.667.667.667H6a.667.667 0 0 0 .667-.667V2.667A.667.667 0 0 0 6 2Zm7.333 0H10a.667.667 0 0 0-.667.667v2c0 .368.299.666.667.666h3.333A.667.667 0 0 0 14 4.667v-2A.667.667 0 0 0 13.333 2Zm0 6H10a.667.667 0 0 0-.667.667v4.666c0 .368.299.667.667.667h3.333a.667.667 0 0 0 .667-.667V8.667A.667.667 0 0 0 13.333 8ZM6 10.667H2.667a.667.667 0 0 0-.667.666v2c0 .368.298.667.667.667H6a.667.667 0 0 0 .667-.667v-2A.667.667 0 0 0 6 10.667Z'/%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".base"]::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M6 2H2.667A.667.667 0 0 0 2 2.667V6c0 .368.298.667.667.667H6A.667.667 0 0 0 6.667 6V2.667A.667.667 0 0 0 6 2Zm0 7.333H2.667A.667.667 0 0 0 2 10v3.333c0 .368.298.667.667.667H6a.667.667 0 0 0 .667-.667V10A.667.667 0 0 0 6 9.333Zm3.333-6.666H14M9.333 6H14m-4.667 4H14m-4.667 3.333H14'/%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .is-unsupported.nav-file-title::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v10.666A1.333 1.333 0 0 0 4 14.667h8a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333Z'/%3e%3cpath d='M6.667 6.867c.133-.267.333-.534.6-.667A1.4 1.4 0 0 1 9 6.467c.2.266.333.533.333.866C9.333 8.2 8 8.667 8 8.667m0 2.666h.007'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .is-unsupported.nav-file-title:is([data-path$=".zip"], [data-path$=".7z"])::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M2.667 14.667v-12c0-.334.133-.667.4-.934.266-.266.6-.4.933-.4h5.667L13.333 5v8.333c0 .334-.133.667-.4.934-.266.266-.6.4-.933.4h-1.333'/%3e%3cpath d='M9.333 1.333v4h4m-6.666 9.334a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667Zm0-10V4m0 4v-.667m0 4.667v-1.333'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".webm"]::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M2.667 14.667H12a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v2'/%3e%3cpath d='M9.333 1.333v4h4M4.667 6.667 2.667 8H1.333v2.667h1.334l2 1.333V6.667Zm2.666.666c.427.534.667 1.247.667 2 0 .754-.24 1.467-.667 2'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".svg"], [data-path$=".bmp"], [data-path$=".jpeg"], [data-path$=".jpg"], [data-path$=".png"], [data-path$=".gif"])::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M12.667 2H3.333C2.597 2 2 2.597 2 3.333v9.334C2 13.403 2.597 14 3.333 14h9.334c.736 0 1.333-.597 1.333-1.333V3.333C14 2.597 13.403 2 12.667 2Z'/%3e%3cpath d='M6 7.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666ZM14 10l-2.057-2.057a1.333 1.333 0 0 0-1.886 0L4 14'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".pdf"]::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v10.666A1.333 1.333 0 0 0 4 14.667h8a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333Z'/%3e%3cpath d='M9.333 1.333v4h4m-2.666 3.334H5.333m5.334 2.666H5.333M6.667 6H5.333'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".excalidraw.md"]::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' clip-path='url(%23a)'%3e%3cpath d='M8 12.667 12.667 8l2 2L10 14.667l-2-2Z'/%3e%3cpath d='m12 8.667-1-5-9.667-2.334L3.667 11l5 1L12 8.667ZM1.333 1.333l5.058 5.058'/%3e%3cpath d='M7.333 8.667a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M6 3.333H1.333V8l4.194 4.193a1.617 1.617 0 0 0 2.28 0l2.386-2.386a1.617 1.617 0 0 0 0-2.28L6 3.333ZM4 6.007V6'/%3e%3cpath d='m10 3.333 4.2 4.2a1.6 1.6 0 0 1 0 2.267l-2.867 2.867'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="tag"] .tree-item-self:not(:has(>.tree-item-icon.collapse-icon))::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg clip-path='url(%23a)'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M8 1.333H1.333V8l6.194 6.193a1.617 1.617 0 0 0 2.28 0l4.386-4.386a1.617 1.617 0 0 0 0-2.28L8 1.333ZM4.667 4.667h.006'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.file-icon-remove .workspace-leaf-content[data-type="bookmarks"] svg.lucide-folder {
+    background-color: currentColor;
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M1.333 6V3.333C1.333 2.6 1.933 2 2.667 2h2.62a1.333 1.333 0 0 1 1.106.6l.547.8a1.333 1.333 0 0 0 1.107.6h5.286a1.333 1.333 0 0 1 1.334 1.333V12a1.333 1.333 0 0 1-1.334 1.333h-12'/%3e%3cpath d='m5.333 10.667 2-2-2-2'/%3e%3cpath d='M1.333 10.667V10a1.333 1.333 0 0 1 1.334-1.333h4'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+
+.file-icon-remove .workspace-leaf-content:is([data-type="file-explorer"], [data-type="bookmarks"], [data-type="tag"]) .tree-item-icon.collapse-icon,
+.file-icon-remove .workspace-leaf-content[data-type="file-explorer"] :is(.nav-file-title, .nav-folder-title)::before,
+.file-icon-remove .workspace-leaf-content[data-type="tag"] .tree-item-self::before {
+    -webkit-mask-size: 15px 15px !important;
+    -webkit-mask-position: center 70% !important;
+    -webkit-mask-repeat: no-repeat !important;
+}
+
+/* ========================================
+二、排版与样式
+======================================== */
+
+/*--- 高亮下划线 ---*/
+/* 使用方法：在font标签中将class的值设为Yellow */
+.theme-light .Yellow {
+  font-weight: bolder;
+  background: linear-gradient(#ffffff00 60%, #f7e5b1 40%);
+  color: inherit !important;
+  margin-right: 0.5px;
+  margin-left: 0.5px;
+  padding: 0 2px;
+  text-indent: 0 !important;
+  display: inline;
+}
+
+.theme-dark .Yellow {
+  font-weight: bolder;
+  background: linear-gradient(#ffffff00 60%, #6d5d2c 40%);
+  color: inherit !important;
+  margin-right: 0.5px;
+  margin-left: 0.5px;
+  padding: 0 2px;
+  text-indent: 0 !important;
+  display: inline;
+}
+
+
+/*--- 取消表格首行加粗 ---*/
+body:not(.shjc) .markdown-rendered table th {
+  font-weight: normal;
+}
+
+
+/*--- Obsidian 聚焦指示器 ---*/
+
+.cm-editor.cm-focused .cm-contentContainer {
+  position: relative;
+}
+
+/* 左侧竖线指示器 */
+
+.cm-line::before {
+  content: "";
+  position: absolute;
+  left: -12px; /* [关键] 竖线位置，根据行号宽度调整 */
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: color-mix(in srgb, var(--text-muted) 30%, transparent); /* [关键] 编辑行默认：淡灰 30% */
+  opacity: 0;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 1px;
+}
+
+.cm-line.cm-active::before {
+  opacity: 1;
+}
+
+.cm-line:hover::before {
+  opacity: 1 !important;
+  background-color: color-mix(in srgb, var(--interactive-accent) 50%, transparent) !important; /* [关键] 悬浮行：主题色 50% */
+  width: 3px;
+  box-shadow: 0 0 8px color-mix(in srgb, var(--interactive-accent) 60%, transparent); /* [关键] 悬浮阴影：主题色 60% */
+  border-radius: 1px;
+}
+
+/* [关键逻辑] 悬浮任意行时，隐藏当前编辑行的竖线 */
+.cm-contentContainer:has(.cm-line:hover) .cm-line.cm-active::before {
+  opacity: 0;
+}
+
+/* [关键逻辑] 当容器内有行被悬浮时，给当前激活行添加极淡的背景色 */
+.cm-contentContainer:has(.cm-line:hover) .cm-line.cm-active {
+  background-color: color-mix(in srgb, var(--interactive-accent) 5%, transparent) !important; /* [关键] 背景高亮透明度 (5%)，可调至 3%-10% */
+  transition: background-color 0.2s ease;
+}
+
+
+/*--- 页内标题分割线 ---*/
+.theme-light {
+  --ynbtys: rgb(206, 206, 206);
+}
+.theme-dark {
+  --ynbtys: rgb(65, 65, 65);
+}
+
+body:not(.is-phone):not(.inline-title-divider-remove) .inline-title:not(.mk-inline-title) {
+  border-bottom: 1px solid var(--ynbtys);
+  padding-bottom: var(--size-4-3);
+  margin-bottom: var(--size-4-3);
+}
+
+
+/*--- 页内标题居中显示 ---*/
+
+body:not(.bjbtjz) .view-content .markdown-source-view .inline-title {
+	align-self: center;
+}
+body:not(.bjbtjz) .markdown-preview-view .mod-header .inline-title {
+	text-align: center;
+}
+
+
+/*--- (编辑视图) 空白行优化 https://forum-zh.obsidian.md/t/topic/12515 ---*/
+
+body:not(.blank-line-tweak) .is-live-preview :is(
+    /* 列表后 */
+    .HyperMD-list-line + [class="cm-line"],
+    /* 引用/代码块/Callout 后 */
+    :is(.HyperMD-quote, .cm-callout, .HyperMD-codeblock) + [class="cm-line"],
+    /* 分割线前 */
+    [class="cm-line"]:has(+ .hr),
+    /* 表格前 s*/
+    [class="cm-line"]:has(+ .cm-table-widget)
+):is(:empty, :has(> br:only-child), :has(> .cm-line:empty)) {
+    padding-top: 0em !important;
+    padding-bottom: 0em !important;
+    line-height: 0.5;
+    transition: 0.3s line-height, 0.3s background-color;
+    border-radius: var(--radius-s);
+}
+
+body:not(.blank-line-tweak) .is-live-preview :is(
+    .HyperMD-list-line + [class="cm-line"],
+    :is(.HyperMD-quote, .cm-callout, .HyperMD-codeblock) + [class="cm-line"],
+    [class="cm-line"]:has(+ .hr),
+    /* 表格前 */
+    [class="cm-line"]:has(+ .cm-table-widget)
+):is(:empty, :has(> br:only-child), :has(> .cm-line:empty)):hover {
+    background-color: hsla(var(--color-accent-hsl), 0.2);
+}
+
+
+/*--- (预览视图) 空白行优化 ---*/
+body:not(.kbhyh) .markdown-preview-view p:not(.callout *) {
+  margin-top: 0.35em !important;
+  margin-bottom: 0.45em !important;
+}
+
+body:not(.kbhyh) .markdown-preview-view blockquote { /* 引用块 */
+  margin: 20px 0 !important;
+}
+
+/* 标题之间 */
+body:not(.kbhyh) .markdown-rendered h1, 
+body:not(.kbhyh) .markdown-rendered h2,
+body:not(.kbhyh) .markdown-rendered h3,
+body:not(.kbhyh) .markdown-rendered h4,
+body:not(.kbhyh) .markdown-rendered h5,
+body:not(.kbhyh) .markdown-rendered h6{
+  margin-bottom: 0.4em !important;
+  padding-bottom: 0 !important;
+  /* line-height: 1.2 !important; */
+}
+
+
+body:not(.kbhyh) .markdown-preview-view ul, /* 列表的外边距 */
+body:not(.kbhyh) .markdown-preview-view ol {
+    margin-bottom: 0 !important;
+}
+
+
+/*--- cssclass 笔记文字居中 ---*/
+.center.markdown-preview-view, .center .cm-content {
+    text-align: center !important;
+}
+
+
+/*--- 圆形复选框 ---*/
+.yuancheckbox input[type=checkbox] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    top: 3px;
+}
+
+/*--- 圆形阴影效果 ---*/
+input[type=checkbox]:checked {
+    box-shadow: 0 0 3px var(--color-accent-2);
+}
+
+
+/*--- 斜体阴影效果 ---*/
+body:not(.xtyy).theme-dark em,
+body:not(.xtyy).theme-dark .cm-em {
+    text-shadow: 1 0 2px rgba(132, 132, 132, 0.168), 0 0 8px rgba(255, 255, 255, 0.45) !important;
+}
+
+body:not(.xtyy).theme-light em,
+body:not(.xtyy).theme-light .cm-em {
+    text-shadow: 1px 0px 2px rgba(76, 76, 76, 0.508) !important;
+}
+
+body:not(.xtyy) .cm-em strong em,
+body:not(.xtyy) .markdown-preview-view strong em {
+    text-shadow: initial !important;
+}
+
+body:not(.xtyy) .cm-em.cm-strong {
+    text-shadow: initial !important;
+}
+
+/*--- 斜体阴影效果（悬停显示） ---*/
+.xtyyxt.theme-dark em:not(strong em):hover,
+.xtyyxt.theme-dark .cm-em:not(.cm-strong):hover {
+    text-shadow: 1 0 2px rgba(132, 132, 132, 0.168), 0 0 8px rgba(255, 255, 255, 0.45) !important;
+    transition: text-shadow 0.2s ease-out;
+}
+
+.xtyyxt.theme-light em:not(strong em):hover,
+.xtyyxt.theme-light .cm-em:not(.cm-strong):hover {
+    text-shadow: 1px 0px 2px rgba(76, 76, 76, 0.508) !important;
+    transition: text-shadow 0.2s ease-out;
+}
+
+.xtyyxt .cm-em strong em,
+.xtyyxt .markdown-preview-view strong em {
+    text-shadow: initial !important;
+}
+
+.xtyyxt .cm-em.cm-strong {
+    text-shadow: initial !important;
+}
+
+
+/*--- 粗体波浪线 ---*/
+body:not(.ctblx) .markdown-preview-view strong,
+body:not(.ctblx) .markdown-rendered strong {
+    text-decoration: underline wavy color-mix(in srgb, var(--color-accent), transparent 70%) !important;}
+
+body:not(.ctblx) .cm-strong {
+    text-decoration: underline wavy color-mix(in srgb, var(--color-accent), transparent 70%) !important;}
+
+
+/*--- 粗体波浪线 (鼠标悬浮显示) ---*/
+.xfctblx .markdown-preview-view strong,
+.xfctblx .markdown-rendered strong {
+  text-decoration: underline wavy transparent;
+  transition: text-decoration-color 0.3s ease;
+}
+
+.xfctblx .markdown-preview-view strong:hover,
+.xfctblx .markdown-rendered strong:hover {
+  text-decoration: underline wavy color-mix(in srgb, var(--color-accent), transparent 20%) !important;
+}
+
+.xfctblx .cm-strong {
+  text-decoration: underline wavy transparent !important;
+  transition: text-decoration-color 0.3s ease;
+}
+
+.xfctblx .cm-strong:hover {
+  text-decoration: underline wavy color-mix(in srgb, var(--color-accent), transparent 20%) !important;
+}
+
+
+/*--- 删除线优化 ---*/
+
+.cm-strikethrough,
+.markdown-preview-view del {
+  text-decoration: none !important;  
+  position: relative;
+  color: var(--text-faint) !important;
+  margin: 0 0.1em !important;
+  padding: 0 0.05em 0.06em 0.05em !important;
+}
+
+.cm-strikethrough::after,
+.markdown-preview-view del::after {
+  content: "";
+  position: absolute;
+  top: 55%;               
+  height: 2px;                     
+  background-color: color-mix(in srgb, var(--color-accent), transparent 15%);      
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+
+/*--- 短划线样式下划线 (下划线优化) ---*/
+.markdown-preview-view u,
+.markdown-source-view.mod-cm6 .cm-content u  {
+  margin: 0 0.1em !important;
+  padding: 0 0.05em !important;
+  text-decoration: none !important; 
+  font-weight: 580; 
+  border-bottom: 2px dashed var(--color-accent); 
+}
+
+/*--- 下划线挖空 ---*/
+.xhxwk u {
+  margin: 0 0.1em !important;
+  padding: 0 0.05em 0 0.05em !important;
+  text-decoration: none !important; 
+  font-weight: 580; 
+  border-bottom: 2px dashed var(--color-accent); 
+  color: transparent;
+  transition: 0.3s all;
+}
+.xhxwk u:hover {
+  color: var(--text-normal); /*  字体颜色  */
+}
+
+
+/*--- 鼠标悬停标题显示为主题色 (编辑视图) 
+body:not(.btxtzts-bj) .cm-header-1,
+body:not(.btxtzts-bj) .cm-header-2,
+body:not(.btxtzts-bj) .cm-header-3,
+body:not(.btxtzts-bj) .cm-header-4,
+body:not(.btxtzts-bj) .cm-header-5,
+body:not(.btxtzts-bj) .cm-header-6 {
+    transition: color 0.2s ease;
+}
+body:not(.btxtzts-bj) .cm-header-1:hover,
+body:not(.btxtzts-bj) .cm-header-2:hover,
+body:not(.btxtzts-bj) .cm-header-3:hover,
+body:not(.btxtzts-bj) .cm-header-4:hover,
+body:not(.btxtzts-bj) .cm-header-5:hover,
+body:not(.btxtzts-bj) .cm-header-6:hover {
+    color: var(--color-accent) !important;
+}
+---*/
+
+/*--- 鼠标悬停标题显示为主题色 (阅读视图) ---*/
+body:not(.btxtzts-yd) .markdown-preview-view h1,
+body:not(.btxtzts-yd) .markdown-preview-view h2,
+body:not(.btxtzts-yd) .markdown-preview-view h3,
+body:not(.btxtzts-yd) .markdown-preview-view h4,
+body:not(.btxtzts-yd) .markdown-preview-view h5,
+body:not(.btxtzts-yd) .markdown-preview-view h6 {
+    transition: color 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
+    will-change: color, transform;
+}
+
+body:not(.btxtzts-yd) .markdown-preview-view h1:hover,
+body:not(.btxtzts-yd) .markdown-preview-view h2:hover,
+body:not(.btxtzts-yd) .markdown-preview-view h3:hover,
+body:not(.btxtzts-yd) .markdown-preview-view h4:hover,
+body:not(.btxtzts-yd) .markdown-preview-view h5:hover,
+body:not(.btxtzts-yd) .markdown-preview-view h6:hover {
+    color: var(--color-accent) !important;
+}
+
+
+/*--- 鼠标悬停标题灵动移动 (阅读视图) ---*/
+body:not(.btxtzts-yd-ld) .markdown-preview-view h1,
+body:not(.btxtzts-yd-ld) .markdown-preview-view h2,
+body:not(.btxtzts-yd-ld) .markdown-preview-view h3,
+body:not(.btxtzts-yd-ld) .markdown-preview-view h4,
+body:not(.btxtzts-yd-ld) .markdown-preview-view h5,
+body:not(.btxtzts-yd-ld) .markdown-preview-view h6 {
+    transition: text-shadow 0.3s ease, transform 0.3s ease, color 0.2s ease;
+    will-change: transform, color;
+}
+
+body:not(.btxtzts-yd-ld) .markdown-preview-view h1:hover,
+body:not(.btxtzts-yd-ld) .markdown-preview-view h2:hover,
+body:not(.btxtzts-yd-ld) .markdown-preview-view h3:hover,
+body:not(.btxtzts-yd-ld) .markdown-preview-view h4:hover,
+body:not(.btxtzts-yd-ld) .markdown-preview-view h5:hover,
+body:not(.btxtzts-yd-ld) .markdown-preview-view h6:hover {
+    transform: translateX(2px);
+}
+
+
+/*--- 标题指示器 (阅读视图) ---*/
+body:not(.btzsq) .markdown-preview-view h1,
+body:not(.btzsq) .markdown-preview-view h2,
+body:not(.btzsq) .markdown-preview-view h3,
+body:not(.btzsq) .markdown-preview-view h4,
+body:not(.btzsq) .markdown-preview-view h5,
+body:not(.btzsq) .markdown-preview-view h6 {
+  position: relative;
+  width: 100%;
+  padding-left: 12px !important;
+  box-sizing: border-box;
+}
+
+body:not(.btzsq) .markdown-preview-view h1::before,
+body:not(.btzsq) .markdown-preview-view h2::before,
+body:not(.btzsq) .markdown-preview-view h3::before,
+body:not(.btzsq) .markdown-preview-view h4::before,
+body:not(.btzsq) .markdown-preview-view h5::before,
+body:not(.btzsq) .markdown-preview-view h6::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 65%;
+  margin-left: 2px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+body:not(.btzsq) .markdown-preview-view h1:hover::before,
+body:not(.btzsq) .markdown-preview-view h2:hover::before,
+body:not(.btzsq) .markdown-preview-view h3:hover::before,
+body:not(.btzsq) .markdown-preview-view h4:hover::before,
+body:not(.btzsq) .markdown-preview-view h5:hover::before,
+body:not(.btzsq) .markdown-preview-view h6:hover::before {
+  opacity: 1;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0);
+}
+body:not(.btzsq) .markdown-preview-view h1::before { background-color: rgba(178, 34, 34, 0.7); }
+body:not(.btzsq) .markdown-preview-view h2::before { background-color: rgb(205, 147, 92, 0.7); }
+body:not(.btzsq) .markdown-preview-view h3::before { background-color: rgb(143, 188, 143, 0.7); }
+body:not(.btzsq) .markdown-preview-view h4::before { background-color: rgb(95, 158, 160, 0.7); }
+body:not(.btzsq) .markdown-preview-view h5::before { background-color: rgb(70, 130, 180, 0.7); }
+body:not(.btzsq) .markdown-preview-view h6::before { background-color: rgb(147, 112, 219, 0.7); }
+
+
+/*--- 显示H标题等级 (编辑视图) ---*/
+
+body:not(.h16) .is-live-preview div.cm-contentContainer > div > div:not(.HyperMD-header.HyperMD-header-1.cm-line.cm-active) > span.cm-header.cm-header-1::before{  
+  content: 'H1';  
+  color: #6b6d6f;  
+  margin-right: 0px;  
+  font-size: 0.6rem;  
+  margin-right: 2px;  
+  font-weight: normal;  
+}  
+  
+body:not(.h16) .is-live-preview div.cm-contentContainer > div > div:not(.HyperMD-header.HyperMD-header-2.cm-line.cm-active) > span.cm-header.cm-header-2::before{  
+  content: 'H2';  
+  color: #6b6d6f;  
+  margin-right: 0px;  
+  font-size: 0.6rem;   
+  margin-right: 2px;  
+  font-weight: normal;  
+}  
+  
+body:not(.h16) .is-live-preview div.cm-contentContainer > div > div:not(.HyperMD-header.HyperMD-header-3.cm-line.cm-active) > span.cm-header.cm-header-3::before{  
+  content: 'H3';  
+  color: #6b6d6f;  
+  margin-right: 0px;  
+  font-size: 0.6rem;   
+  margin-right: 2px;  
+  font-weight: normal;  
+}  
+  
+body:not(.h16) .is-live-preview div.cm-contentContainer > div > div:not(.HyperMD-header.HyperMD-header-4.cm-line.cm-active) > span.cm-header.cm-header-4::before{  
+  content: 'H4';  
+  color: #6b6d6f;  
+  margin-right: 0px;  
+  font-size: 0.6rem;   
+  margin-right: 2px;  
+  font-weight: normal;  
+}  
+  
+body:not(.h16) .is-live-preview div.cm-contentContainer > div > div:not(.HyperMD-header.HyperMD-header-5.cm-line.cm-active) > span.cm-header.cm-header-5::before{  
+  content: 'H5';  
+  color: #6b6d6f;  
+  margin-right: 0px;  
+  font-size: 0.6rem;   
+  margin-right: 2px;  
+  font-weight: normal;  
+}  
+  
+body:not(.h16) .is-live-preview div.cm-contentContainer > div > div:not(.HyperMD-header.HyperMD-header-6.cm-line.cm-active) > span.cm-header.cm-header-6::before{  
+  content: 'H6';  
+  color: #6b6d6f;  
+  margin-right: 0px;  
+  font-size: 0.6rem;   
+  margin-right: 2px;  
+  font-weight: normal;  
+}
+
+
+/* --- 灵动选择框 --- */
+
+.markdown-preview-view .task-list-item-checkbox,
+.markdown-source-view.mod-cm6 .task-list-item-checkbox {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+/* 未勾选 [ ] */
+.markdown-preview-view .task-list-item-checkbox:not(:checked):hover,
+.markdown-source-view.mod-cm6 .task-list-item-checkbox:not(:checked):hover {
+  transform: scale(1.15) rotate(-3deg);
+}
+/* 已勾选 [x] */
+.markdown-preview-view .task-list-item-checkbox:checked:hover,
+.markdown-source-view.mod-cm6 .task-list-item-checkbox:checked:hover {
+  transform: scale(1.15) rotate(3deg); 
+}
+
+/* 阅读视图 选择框背景颜色 */
+body .task-list-item.is-checked > input[type="checkbox"]:hover {
+    background-color: var(--color-accent) !important;
+    opacity: 1 !important;
+}
+/* 编辑视图 选择框背景颜色 */
+.cm-editor .task-list-item-checkbox[data-task="x"]:hover,
+.cm-editor .task-list-item-checkbox[data-task="X"]:hover {
+    background-color: var(--color-accent) !important;
+    opacity: 1 !important;
+}
+
+
+/*--- 内外链图标 ---*/
+
+/*
+body{
+  // 内 
+  --link-color: #eb9340;
+  --link-color-hover: #f08521;
+  // 外 
+  --link-external-color: #0F0;
+  --link-external-color-hover: #0f0;
+}
+
+// 编辑视图和预览视图中未创建的内部链接 
+.internal-link.is-unresolved {
+  color: #eb9340ef !important;
+}
+// 鼠标悬浮在未创建的内部链接上时 
+.internal-link.is-unresolved:hover {
+  color: #f08521 !important; 
+}
+*/
+
+body:not(.nwltb) .markdown-preview-view .external-link { 
+  background-image: none !important; 
+  padding-right: 0 !important;
+}
+
+body:not(.nwltb) a.internal-link::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.1em;
+  vertical-align: -0.1em;
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z'/><path d='M14 2v4a2 2 0 0 0 2 2h4M10 9H8m8 4H8m8 4H8'/></g></svg>") no-repeat center;
+  -webkit-mask-size: contain;
+  background-color: var(--link-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+body:not(.nwltb) a.internal-link:hover::before {
+  background-color: var(--link-color-hover);
+}
+
+body:not(.nwltb) a.external-link {
+  position: relative;
+}
+
+body:not(.nwltb) a.external-link::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.1em;
+  vertical-align: -0.1em;
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/></g></svg>") no-repeat center;
+  -webkit-mask-size: contain;
+  background-color: var(--link-external-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+body:not(.nwltb) a.external-link:hover::before {
+  background-color: var(--link-external-color-hover);
+}
+
+body:not(.nwltb) .cm-hmd-internal-link > .cm-underline {
+  position: relative;
+}
+
+body:not(.nwltb) .cm-hmd-internal-link > .cm-underline::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.1em;
+  vertical-align: -0.1em;
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z'/><path d='M14 2v4a2 2 0 0 0 2 2h4M10 9H8m8 4H8m8 4H8'/></g></svg>") no-repeat center;
+  -webkit-mask-size: contain;
+  background-color: var(--link-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+body:not(.nwltb) .cm-hmd-internal-link > .cm-underline:hover::before {
+  background-color: var(--link-color-hover);
+}
+
+body:not(.nwltb) .cm-link .cm-underline,
+body:not(.nwltb) .cm-url .cm-underline {
+  position: relative;
+}
+
+body:not(.nwltb) .cm-link .cm-underline::before,
+body:not(.nwltb) .cm-url .cm-underline::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.1em;
+  vertical-align: -0.1em;
+  -webkit-mask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'><g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/></g></svg>") no-repeat center;
+  -webkit-mask-size: contain;
+  background-color: var(--link-external-color);
+  transition: background-color 0.2s ease-in-out;
+}
+
+body:not(.nwltb) .cm-link .cm-underline:hover::before,
+body:not(.nwltb) .cm-url .cm-underline:hover::before {
+  background-color: var(--link-external-color-hover);
+}
+
+/*--- 内外链鼠标悬停背景 ---*/
+body:not(.lxtbj) a:hover { 
+  text-decoration: none !important; 
+}
+
+body:not(.lxtbj) .markdown-preview-view a.internal-link:hover,
+body:not(.lxtbj) .markdown-source-view.mod-cm6 .cm-contentContainer .cm-underline:hover,
+body:not(.lxtbj) body:not(.link-hover-expand) a.internal-link:not(.is-unresolved):hover,
+body:not(.lxtbj) body:not(.link-hover-expand) .cm-hmd-internal-link > .cm-underline:hover {
+  background-color: var(--my-link-hover-bg);
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+body:not(.lxtbj) .markdown-preview-view a.external-link:hover,
+body:not(.lxtbj) body:not(.link-hover-expand) a.external-link:hover,
+body:not(.lxtbj) body:not(.link-hover-expand) .cm-link .cm-underline:hover,
+body:not(.lxtbj) body:not(.link-hover-expand) .cm-url:not(.cm-string) .cm-underline:hover {
+  background-color: var(--my-ext-link-hover-bg);
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+body:not(.lxtbj) .markdown-preview-view a.internal-link:hover,
+body:not(.lxtbj) .markdown-source-view.mod-cm6 .cm-contentContainer .cm-underline:hover,
+body:not(.lxtbj) body:not(.link-hover-expand) a.internal-link:not(.is-unresolved):hover,
+body:not(.lxtbj) body:not(.link-hover-expand) .cm-hmd-internal-link > .cm-underline:hover {
+  background-color: var(--my-link-hover-bg);
+}
+
+body:not(.lxtbj) .markdown-preview-view a.external-link:hover,
+body:not(.lxtbj) body:not(.link-hover-expand) a.external-link:hover,
+body:not(.lxtbj) body:not(.link-hover-expand) .cm-link .cm-underline:hover,
+body:not(.lxtbj) body:not(.link-hover-expand) .cm-url:not(.cm-string) .cm-underline:hover {
+background-color: var(--my-ext-link-hover-bg);
+}
+
+
+/*--- 将分割线作为PDF分割符 ---*/
+/* 编辑模式下显示分隔符 */
+.fgxfg .cm-content hr {
+  border: 1px solid var(--background-modifier-border);
+  /* 编辑模式下的分隔符样式 */
+  height: 0;
+  margin: 16px 0;
+  /* 调整分隔符上下间距 */
+}
+
+/* 导出为 PDF 时隐藏分隔符并分页 */
+@media print {
+    .fgxfg hr {
+    page-break-after: always;
+    /* 在分隔符后分页 */
+    border: none;
+    /* 隐藏分隔符线 */
+    height: 0;
+    visibility: hidden;
+    /* 确保分隔符不可见 */
+  }
+}
+
+.fgxfg.theme-light {
+  --hr-color-side: var(--background-primary);
+  --hr-color-center: #8f8f8f;
+}
+
+.fgxfg.theme-dark {
+  --hr-color-side: var(--background-primary);
+  --hr-color-center: #949292;
+}
+
+.fgxfg .markdown-source-view.mod-cm6 hr,
+.fgxfg .markdown-rendered hr {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, var(--hr-color-side), var(--hr-color-center), var(--hr-color-side));
+}
+
+.fgxfg .markdown-source-view.mod-cm6 hr::after,
+.fgxfg .markdown-rendered hr::after {
+  content: 'PDF分割启用';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  padding: 0.1rem;
+  background-color: var(--background-primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- 分割线美化 
+
+.theme-light {
+  --divide-gradient-side-color: #ffffff00;
+  --divide-gradient-center-color: #c5c5c5;
+}
+.theme-dark {
+  --divide-gradient-side-color: #1E1E1E00;
+  --divide-gradient-center-color: #6b6b6b;
+}
+
+.markdown-source-view.mod-cm6 hr,
+.markdown-rendered hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, var(--divide-gradient-side-color), var(--divide-gradient-center-color), var(--divide-gradient-side-color));
+  margin: 20px 0;
+}
+
+.markdown-source-view.mod-cm6 hr::before,
+.markdown-rendered hr::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: rgba(73, 73, 73, 0.3);
+  border-radius: 4px;
+  margin: -2px 0;
+}
+---*/
+
+/*--- 侧边栏的折叠/展开按钮高亮显示 ---*/
+body .workspace.is-left-sidedock-open .sidebar-toggle-button.mod-left .clickable-icon,
+body .workspace.is-right-sidedock-open .sidebar-toggle-button.mod-right .clickable-icon {
+    color: var(--color-accent);
+}
+
+
+/*--- 界面高亮样式优化 ---*/
+.theme-light .search-result-file-matched-text {
+  /* color: red !important; 字体颜色 */
+  background-color: #f7e5b1 !important;
+  border-radius: 0.2em;
+}
+
+.theme-dark .search-result-file-matched-text {
+  /* color: red !important; 字体颜色 */
+  background-color: #6d5d2c !important;
+  border-radius: 0.2em;
+}
+
+
+/*--- 隐藏帮助按钮 ---*/
+svg.svg-icon.help {
+  display: none;
+}
+
+
+/*--- 为标签添加行高 ---*/
+.markdown-preview-view .tag {
+  line-height: 26px !important;
+}
+
+.cm-s-obsidian span.cm-hashtag,
+.cm-s-obsidian span.cm-inline-code.cm-hashtag {
+  line-height: 26px !important;
+}
+
+
+/*--- 鼠标悬停时内外部链接颜色使用主题色 ---*/
+.markdown-source-view.mod-cm6 .cm-editor .cm-underline:hover,
+.markdown-preview-view .internal-link:hover {
+  color: var(--color-accent) !important; 
+}
+
+.markdown-source-view.mod-cm6 .cm-editor .cm-external-link:hover,
+.markdown-preview-view .external-link:hover {
+  color: var(--color-accent) !important; 
+}
+
+/* 斜体优化 */
+em {
+  margin-right: 0.17em;
+  margin-left: 0.1em;
+}
+
+:is(.cm-s-obsidian,span.cm-em,em){
+  margin-right: 0.17em;
+  margin-left: 0.1em;
+}
+
+/*--- 高亮优化 ---*/
+.theme-light .markdown-source-view.mod-cm6 .cm-highlight,
+.theme-light .markdown-preview-view mark {
+  background-color: #f7e5b1; 
+  /* color: #d73a49; 文字颜色 */
+  border-radius: 3px;
+  /* font-weight: bold; */
+  padding: 0 2px;
+  margin: 0 0.5px;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-highlight,
+.theme-dark .markdown-preview-view mark {
+  background-color: #6d5d2c;
+  /* color: #d73a49; 文字颜色 */
+  border-radius: 3px;
+  /* font-weight: bold; */
+  padding: 0 2px;
+  margin: 0 0.5px;
+}
+
+
+/*--- 下划线优化 ---*/
+u {
+  text-decoration: none;
+  border-bottom: 1px solid #5c5c5c;
+}
+
+/*--- 图片外发光效果 ---*/
+.yyBeiJing .markdown-preview-view img:hover {
+  box-shadow: 0 0 8px var(--color-accent);
+  transition: box-shadow 0.3s ease;
+}
+
+/*--- 为图片添加圆角效果 ---*/
+.markdown-preview-view img[src*="/"] {
+  border-radius: 4px !important;
+}
+
+.markdown-source-view img[src*="/"] {
+  border-radius: 4px !important;
+}
+
+
+/*--- 引用块美化 ---*/
+body:not(.yykmh) .markdown-preview-view blockquote {
+  border-left: none !important;
+  padding: 1em 1.5em 1em !important;
+  position: relative;
+  border-radius: 7px; 
+  z-index: 1;  
+}
+
+body:not(.yykmh) .markdown-preview-view blockquote::before {
+  content: "✨";
+  position: absolute;
+  right: 0.35em;
+  top: 0.05em;
+  font-size: 2.5em;
+  color: var(--color-accent);
+  opacity: 0.9;
+  z-index: -1; 
+  opacity: 0.3;
+
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+  transform: rotate(-7deg); 
+}
+
+@media print { /* 导出为PDF文档时隐藏 */
+  body:not(.yykmh) blockquote::before {
+    opacity: 0 !important;
+    
+    /* 可选：打印时移除动画和变形，使版面更静态整洁 */
+    transform: rotate(-8deg) !important; 
+    transition: none !important;
+  }
+
+  body:not(.yykmh) blockquote:hover::before {
+    opacity: 0 !important;
+    transform: rotate(-8deg) !important;
+  }
+}
+
+body:not(.yykmh) .markdown-preview-view blockquote:hover::before {
+  transform: rotate(-2deg) scale(1.2); 
+  opacity: 0.5; 
+}
+
+body:not(.yykmh) .markdown-preview-view blockquote {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+body:not(.yykmh).theme-light .markdown-preview-view blockquote:hover {
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.164);
+}
+
+body:not(.yykmh).theme-dark .markdown-preview-view blockquote:hover {
+  box-shadow: 0 0px 7px rgba(36, 36, 36, 0.671);
+}
+
+/*实时预览模式*/
+body:not(.yykmh) .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
+body:not(.yykmh) .markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  border-left: none;
+}
+body:not(.yykmh) .markdown-source-view.mod-cm6.is-live-preview
+.HyperMD-quote:not(.cm-active) > .cm-formatting.cm-formatting-quote.cm-quote::before {
+  content: "❝";
+  font-size: 2em;
+  position: absolute;
+  margin-left: -0.2em;
+  top:-0.3em;
+  /* color: var(--color-accent); */
+}
+body:not(.yykmh) .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote + .HyperMD-quote > .cm-formatting.cm-formatting-quote.cm-quote::before {
+  display: none;
+}
+body:not(.yykmh) .markdown-source-view.mod-cm6.is-live-preview .cm-content div.HyperMD-quote .cm-blockquote-border {
+  border: none;
+}
+
+
+/*--- 引用块背景颜色 ---*/
+.theme-light .cm-s-obsidian .HyperMD-quote,
+.theme-light .markdown-rendered blockquote {
+  color: #494949;
+  background-color: #ececec7a !important; 
+}
+
+.theme-dark .cm-s-obsidian .HyperMD-quote,
+.theme-dark .markdown-rendered blockquote {
+  color: #d1d1d1;
+  background-color: #0f0f0f79 !important; 
+}
+
+
+/*--- 行内代码 ---*/
+.cm-inline-code,
+.markdown-preview-view code { 
+  color: #808080 !important; 
+  padding: 0 3px !important; 
+}
+
+/*--- 行内代码块预览视图背景颜色 ---*/
+.theme-light .markdown-preview-view :not(pre) > code {
+  background-color: #e9e9e9 !important; /* 设置背景颜色为红色 */
+}
+.theme-dark .markdown-preview-view :not(pre) > code {
+  background-color: #31313185 !important; /* 设置背景颜色为红色 */
+}
+
+/*--- 代码块优化 ---*/
+.theme-light .markdown-preview-view pre {
+  background-color: #f3f3f3 !important;
+  border: 1px solid transparent !important; 
+  border-radius: 7px !important;
+  padding: 8px !important;
+  margin: 10px 0 !important;
+  transition: border-color 0.2s ease-in-out !important;
+  border: 2px solid #dfdfdf !important;
+}
+
+.theme-light  .markdown-preview-view pre:hover {
+  border: 2px solid #cecece !important;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+  to {
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.1),
+                0 0 6px 2px rgba(255, 255, 255, 0.05);
+  }
+}
+
+@keyframes fadeGlow {
+  from {
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.1),
+                0 0 6px 2px rgba(255, 255, 255, 0.05);
+  }
+  to {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.theme-dark .markdown-preview-view pre {
+  transition: all 0.2s ease-out;
+  background-color: #1818187c !important;
+  border-radius: 8px !important;
+}
+
+.theme-dark .markdown-preview-view pre:hover {
+  animation: glow 0.3s ease-out forwards;
+}
+
+.theme-dark .markdown-preview-view pre:not(:hover) {
+  animation: fadeGlow 0.3s ease-out forwards;
+}
+
+.theme-light .cm-s-obsidian div.HyperMD-codeblock-bg {
+  background: #f3f3f3 !important;
+}
+
+.theme-dark .cm-s-obsidian div.HyperMD-codeblock-bg {
+  background: #1818187c !important;
+}
+
+body.theme-light {
+  --code-function: #d97706;
+  --code-punctuation: #6b7280;
+  --code-keyword: #db2777;
+  --code-property: #2563eb;
+  --code-string: #15803d;
+  --code-tag: #e11d48;
+  --code-value: #7c3aed;
+  --code-normal: #374151;
+  --code-comment: #9ca3af;
+  --code-important: #d97706;
+  --code-operator: #e11d48;
+}
+
+body.theme-dark {
+  --code-function: #ed8936;
+  --code-punctuation: #718096;
+  --code-keyword: #d53f8c;
+  --code-property: #4299e1;
+  --code-string: #68d391;
+  --code-tag: #f56565;
+  --code-value: #b794f4;
+  --code-normal: #e2e8f0;
+  --code-comment: #a0aec0;
+  --code-important: #ed8936;
+  --code-operator: #f56565;
+}
+
+/*--- 鼠标悬停放大代码块字体 ---*/
+
+.xtfddmk .markdown-preview-view pre code {
+  /* font-size: 1em !important; */
+  transition: font-size 0.3s ease !important;
+  font-family: "JetBrains Mono", "Fira Code", "Consolas", "Courier New", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", monospace !important;
+}
+
+.xtfddmk .markdown-preview-view pre:hover code {
+  font-size: 1.15em !important;
+}
+
+.xtfddmk .markdown-preview-view pre {
+  transition: transform 0.3s ease !important;
+  transform-origin: center center !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+.xtfddmk .markdown-preview-view pre:hover {
+  transform: scale(1.023) !important;
+}
+
+/* 
+body.xtfddmk .markdown-preview-view .code-block > code {
+  font-size: 1em !important;
+  transition: font-size 0.3s ease !important;
+}
+
+body.xtfddmk .markdown-preview-view .code-block:hover > code {
+  font-size: 1.2em !important;
+}
+*/
+
+/*--- 引用块悬停放大 ---*/
+.fdyyk .markdown-preview-view blockquote {
+  /* 添加过渡效果，确保平滑 */
+  transition: transform 0.3s ease, font-size 0.3s ease !important;
+  /* 核心：设置缩放原点为中心 */
+  transform-origin: center center !important;
+  /* 确保放大时浮在其他文字上方 */
+  position: relative !important;
+  z-index: 10 !important;
+  /* 可选：保持引用块原有的左侧边框样式不被破坏 */
+  overflow: visible !important; 
+}
+.fdyyk .markdown-preview-view blockquote:hover {
+  /* 字体放大倍数：与代码块保持一致 (1.15em) */
+  font-size: 1.15em !important;
+  /* 整体缩放倍数：与代码块保持一致 (1.08) */
+  transform: scale(1.025) !important;
+  /* 确保行高随字体变大而调整，防止拥挤 */
+  line-height: 1.6 !important;
+}
+
+
+/*--- 代码行号显示 ---*/
+.xsdmhg .HyperMD-codeblock-begin {
+  counter-reset: line-numbers;
+}
+
+.xsdmhg .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end) {
+  padding-left: 3em;
+  position: relative;
+}
+  
+.xsdmhg .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::after {
+  align-items: flex-start;
+  color: var(--text-faint);
+  content: counter(line-numbers);
+  counter-increment: line-numbers;
+  display: flex;
+  font-size: 0.8em;
+  height: 100%;
+  justify-content: flex-end;
+  left: 0;
+  position: absolute;
+  text-align: right;
+  width: 2em;
+  padding-right: 0.5em;
+  bottom: -2px;
+  border-right: 1px solid var(--scrollbar-thumb-bg);
+}
+
+.xsdmhg .HyperMD-codeblock.cm-line.cm-active:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::after {
+  color: var(--color-accent);
+}
+
+.xsdmhg .HyperMD-codeblock.cm-line.cm-active:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::after {
+  color: var(--color-accent);
+}
+
+.xsdmhg .HyperMD-codeblock .cm-foldPlaceholder::before {
+  display: none;
+}
+
+.center-image :is(.markdown-preview-view,.markdown-rendered) img:not([class*="emoji"]) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-image .print :is(.markdown-preview-view,.markdown-rendered) img:not([class*="emoji"]) {
+  display: block;
+}
+
+.center-image .view-content img:not([class*="emoji"]) {
+  cursor: zoom-in;
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/*--- 嵌入优化 ---*/
+.markdown-preview-view .markdown-embed,
+.markdown-preview-view .file-embed {
+  border: 3px solid var(--background-modifier-border);
+  border-radius: 8px;
+  margin-top: 0px;
+  display: block;
+  transition: border-color 0.3s ease;
+}
+
+.theme-light .markdown-preview-view .markdown-embed:hover,
+.theme-light .markdown-preview-view .file-embed:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 70%, white 15%);
+}
+.theme-dark .markdown-preview-view .markdown-embed:hover,
+.theme-dark .markdown-preview-view .file-embed:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 70%, black 15%);
+}
+
+.markdown-embed {
+  padding-top: 4px; 
+  padding-bottom: 10px;
+  border-left: none;
+  border: 3px solid var(--background-modifier-border);
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+/* 鼠标悬停颜色 */
+.theme-light .markdown-embed:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 70%, white 15%);
+  /*
+  box-shadow: 0 0 4px var(--color-accent);
+  transition: box-shadow 0.2s ease;*/
+}
+.theme-dark .markdown-embed:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 70%, black 15%);
+  /*
+  box-shadow: 0 0 4px var(--color-accent);
+  transition: box-shadow 0.2s ease;*/
+}
+
+.embed-title {
+  display: none;
+}
+
+:is(.markdown-preview-view, .markdown-rendered) .markdown-embed-content {
+  padding-right: 0px;
+  padding-top: 5px; 
+  max-width: 100%;
+  overflow: auto;
+}
+
+:is(.callout) .markdown-embed-content {
+  padding-right: 0px;
+  max-height: 350px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.markdown-embed {
+  position: relative;
+}
+
+.markdown-embed  .embed-title {
+  position: absolute;
+  top: 8px;
+  right: 28px;
+  font-size: 0.85em;
+  color: var(--text-muted);
+  padding: 0 4px;
+  z-index: 1;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  display: block !important;
+}
+
+.markdown-embed:hover .embed-title {
+  opacity: 1;
+}
+
+
+/*--- 细化滚动条 ---*/
+.CodeMirror-vscrollbar,
+.CodeMirror-hscrollbar,
+::-webkit-scrollbar {
+  width: 11px !important;
+}
+::-webkit-scrollbar {
+  height: 11px !important; /* 嵌入页面滚动条 */
+}
+
+
+/*--- 滚动条优化 ---*/
+body {
+  /* 鼠标移入时的颜色 */
+  --scrollbar-color-movein: hsla(var(--color-accent-hsl), 24%);
+  /* 鼠标点击时的颜色 */
+  --scrollbar-color-active: hsla(var(--color-accent-hsl), 64%);
+  --animation: var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+body.scrollbar-hover-accent {
+  --setting-scrollbar-hover: hsla(var(--color-accent-hsl), 40%);
+}
+/* https://stackoverflow.com/a/74050413/20058211 */
+/* https://stackoverflow.com/a/46304690/20058211 */
+@property --scrollbar-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar {
+  /*width: var(--size-4-3) !important;
+  height: var(--size-4-3) !important;*/
+  background-color: transparent !important;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: var(--size-2-3) !important;
+  border: 3.6px solid transparent !important;
+  background-color: var(--scrollbar-color) !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  --scrollbar-color: var(--setting-scrollbar-hover);
+}
+::-webkit-scrollbar-thumb:active {
+  --scrollbar-color: hsla(var(--color-accent-hsl), 64%);
+}
+body :is(.vertical-tab-header, .vertical-tab-content, .nav-files-container, .view-content, .search-result-container, .git-view-body, .suggestion-container .suggestion, .prompt-results, .community-modal-search-results-wrapper, .community-modal-info, .modal:not(.mod-settings, .mod-community-theme, .mod-community-plugin), .tag-container, .backlink-pane, .workspace-leaf-content[data-type=markdown] .cm-scroller, .markdown-preview-view, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container, mjx-container, .markdown-embed-content .markdown-rendered, pre code, .workspace-leaf-content[data-type=calendar] .view-content, .janitor-scan-results, .excalidraw-wrapper :is(.App-mobile-menu, .App-menu .Stack .Island.App-menu__left, .scrollbar), .excalidraw-contextMenuContainer .popover, .kanban-plugin__board, .kanban-plugin__lane-items) {
+  transition: --scrollbar-color var(--animation);
+  scrollbar-gutter: var(--setting-scrollbar-gutter, initial);
+}
+body :is(.vertical-tab-header, .vertical-tab-content, .nav-files-container, .view-content, .search-result-container, .git-view-body, .suggestion-container .suggestion, .prompt-results, .community-modal-search-results-wrapper, .community-modal-info, .modal:not(.mod-settings, .mod-community-theme, .mod-community-plugin), .tag-container, .backlink-pane, .workspace-leaf-content[data-type=markdown] .cm-scroller, .markdown-preview-view, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container, mjx-container, .markdown-embed-content .markdown-rendered, pre code, .workspace-leaf-content[data-type=calendar] .view-content, .janitor-scan-results, .excalidraw-wrapper :is(.App-mobile-menu, .App-menu .Stack .Island.App-menu__left, .scrollbar), .excalidraw-contextMenuContainer .popover, .kanban-plugin__board, .kanban-plugin__lane-items):hover {
+  --scrollbar-color: hsla(var(--color-accent-hsl), 24%);
+}
+body textarea {
+  color: transparent;
+  transition: color var(--animation);
+  -webkit-text-fill-color: var(--text-normal);
+}
+body textarea:hover {
+  color: hsla(var(--color-accent-hsl), 24%);
+}
+body textarea * {
+  -webkit-text-fill-color: initial;
+}
+body textarea::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 0 10px inset;
+  border-width: 3.2px;
+  background-clip: content-box;
+  background-color: transparent !important;
+}
+
+
+/*--- 优化 Callout ---*/
+
+/* 隐藏多余元素 */
+.markdown-source-view.mod-cm6 .cm-embed-block.cm-callout {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  min-height: 0 !important;
+  display: block !important;
+}
+.markdown-source-view.mod-cm6 .cm-embed-block.cm-callout .edit-block-button {
+  display: none !important;
+}
+
+.markdown-preview-view .callout,
+.markdown-source-view.mod-cm6 .callout {
+    border: none !important;
+    padding: 0 !important;
+    background-color: var(--background-primary) !important;
+    box-shadow: inset 0 0 0 2px rgba(var(--callout-color), 0.12) !important;
+    margin: 0.em 0 !important;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+    transition: box-shadow 0.2s ease-in-out !important;
+}
+
+.markdown-preview-view .callout:hover,
+.markdown-source-view.mod-cm6 .callout:hover {
+    box-shadow: 
+        inset 0 0 0 2px rgba(var(--callout-color), 0.4) !important;
+}
+
+.markdown-preview-view .callout .callout-title,
+.markdown-source-view.mod-cm6 .callout .callout-title {
+    padding: 8px 12px !important;
+    background-color: rgba(var(--callout-color), 0.2) !important;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(var(--callout-color), 0.15) !important;
+}
+
+.markdown-preview-view .callout .callout-content {
+    margin-top: 0px;
+    padding: 0px 20px 2px !important;
+    background-color: rgba(var(--callout-color), 0.05) !important;
+}
+
+.markdown-source-view.mod-cm6 .callout .callout-content {
+    margin-top: 0px;
+    padding: 0px 20px 0px !important;
+    background-color: rgba(var(--callout-color), 0.05) !important;
+}
+
+.markdown-preview-view .callout .callout-icon,
+.markdown-source-view.mod-cm6 .callout .callout-icon {
+    margin-right: 6px !important;
+}
+
+.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"] { --callout-color: var(--color-yellow-rgb) !important; }
+.callout[data-callout="bug"] { --callout-color: var(--color-pink-rgb) !important; }
+
+/* 增加对 Columns 插件的支持 (分栏插件)： */
+.callout[data-callout="col"] { --callout-color: 128, 128, 128 !important; }
+.callout[data-callout="col-md"] { --callout-color: 128, 128, 128 !important; }
+.callout[data-callout="col-md-0.5"] { --callout-color: 128, 128, 128 !important; }
+.callout[data-callout="col-md-1"] { --callout-color: 128, 128, 128 !important; }
+.callout[data-callout="col-md-2"] { --callout-color: 128, 128, 128 !important; }
+.callout[data-callout="col-md-3"] { --callout-color: 128, 128, 128 !important; }
+.callout[data-callout="col-md-4"] { --callout-color: 128, 128, 128 !important; }
+.callout[data-callout="col-md-5"] { --callout-color: 128, 128, 128 !important; }
+.callout[data-callout="col-md-6"] { --callout-color: 128, 128, 128 !important; }
+/* 不显示背景颜色：
+.callout[data-callout="col"] {
+  --callout-color: rgba(0, 0, 0, 0) !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+*/
+
+/* 模糊 callout 内容 */
+.callout[data-callout-metadata="mhwz"] .callout-content,
+.callout[data-callout-metadata="mhwz"] .callout-content * {
+    filter: blur(2px) !important;      /* 模糊程度，可调整数字 */
+    transition: filter 0.3s ease;      /* 过渡动画时间 */
+    will-change: filter;               /* 性能优化 */
+    transform: translate3d(0, 0, 0);   /* 强制开启硬件加速，防止模糊失效或锯齿 */
+}
+.callout[data-callout-metadata="mhwz"]:hover .callout-content,
+.callout[data-callout-metadata="mhwz"]:hover .callout-content * {
+    filter: blur(0) !important;
+}
+
+
+/*--- Emoji Callout ---*/
+
+/* 基础设置 */
+.emojicallout .callout {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 默认状态：Emoji 背景 */
+.emojicallout .callout::before {
+  content: ""; 
+
+  position: absolute;
+  right: 0.5em;
+  top: 0.05em;
+  
+  font-size: 2.5em;
+  color: var(--color-accent);
+  opacity: 0.2; 
+  z-index: 999;
+  pointer-events: none;
+  user-select: none;
+  
+  /* 过渡动画 */
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+  
+  /* 初始状态：无旋转 */
+  transform: rotate(-8deg); 
+}
+
+.emojicallout .callout:hover::before {
+  transform: rotate(-5deg) scale(1.2); 
+  opacity: 0.5; 
+}
+
+/* Tip 类型（自定义）
+.emojicallout .callout[data-callout="tip"]::before {
+  content: "✨";
+}
+.emojicallout .callout[data-callout="tip"]:hover::before {
+    transform: rotate(-5deg) scale(1.2); 
+}
+*/
+
+.emojicallout .callout[data-callout="note"]::before {
+  content: "📃";
+}
+.emojicallout .callout[data-callout="info"]::before { /* ℹ️ 📢 💡 */
+  content: "📢";
+}
+.emojicallout .callout[data-callout="todo"]::before {
+  content: "📋";
+}
+
+.emojicallout .callout[data-callout="tldr"]::before {
+  content: "📝";
+}
+.emojicallout .callout[data-callout="abstract"]::before {
+  content: "📝";
+}
+.emojicallout .callout[data-callout="summary"]::before {
+  content: "📝";
+}
+
+.emojicallout .callout[data-callout="tip"]::before {
+  content: "📑";
+}
+.emojicallout .callout[data-callout="hint"]::before {
+  content: "📑";
+}
+.emojicallout .callout[data-callout="important"]::before {
+  content: "📑";
+}
+
+.emojicallout .callout[data-callout="success"]::before {
+  content: "✅";
+}
+.emojicallout .callout[data-callout="check"]::before {
+  content: "✅";
+}
+.emojicallout .callout[data-callout="done"]::before {
+  content: "✅";
+}
+
+.emojicallout .callout[data-callout="question"]::before {
+  content: "📡";
+}
+.emojicallout .callout[data-callout="help"]::before {
+  content: "📡";
+}
+.emojicallout .callout[data-callout="faq"]::before {
+  content: "📡";
+}
+
+.emojicallout .callout[data-callout="warning"]::before { /* ⚡ 🎯 🚨 */
+  content: "⚡";
+}
+.emojicallout .callout[data-callout="caution"]::before {
+  content: "⚡";
+}
+.emojicallout .callout[data-callout="attention"]::before {
+  content: "⚡";
+}
+
+.emojicallout .callout[data-callout="failure"]::before {
+  content: "☎";
+}
+.emojicallout .callout[data-callout="fail"]::before {
+  content: "☎";
+}
+.emojicallout .callout[data-callout="missing"]::before {
+  content: "☎";
+}
+
+.emojicallout .callout[data-callout="danger"]::before { 
+  content: "☎";
+}
+.emojicallout .callout[data-callout="error"]::before {
+  content: "☎";
+}
+
+.emojicallout .callout[data-callout="bug"]::before {
+  content: "☠️";
+}
+
+.emojicallout .callout[data-callout="example"]::before {
+  content: "📽";
+}
+
+.emojicallout .callout[data-callout="quote"]::before {
+  content: "💬";
+}
+.emojicallout .callout[data-callout="cite"]::before {
+  content: "🔗";
+}
+
+.emojicallout .callout[data-callout-metadata*="aside-l"].is-collapsed::before,
+.emojicallout .callout[data-callout-metadata*="aside-r"].is-collapsed::before {
+  opacity: 0 !important;
+  transform: scale(0) rotate(-20deg) !important;
+  pointer-events: none !important;
+} /* 对"旁注"CSS片段的折叠样式添加支持 */
+
+@media print { /* 导出为PDF文档时隐藏 */
+  .emojicallout .callout::before {
+    opacity: 0 !important;
+    
+    /* 可选：打印时移除动画和变形，使版面更静态整洁 */
+    transform: rotate(-8deg) !important;
+    transition: none !important;
+  }
+
+  .emojicallout .callout:hover::before {
+    opacity: 0 !important;
+    transform: rotate(-8deg) !important;
+  }
+}
+
+
+/*--- 表格优化 ---*/
+body {
+  --table-radius: 6px;
+  --table-border-width: 2px;
+}
+
+body.theme-light {
+  --table-header-bg: rgba(244, 244, 244, 1);
+  --table-alt-line-bg: rgba(244, 244, 244, 1);
+  --table-btn-color: rgb(168, 168, 168);
+  --table-btn-bg: rgb(243, 243, 243, 0.2);
+}
+
+body.theme-dark {
+  --table-header-bg: rgba(42, 42, 42, 0.2);
+  --table-alt-line-bg: rgba(37, 37, 37, 0.2);
+  --table-btn-color: rgba(218, 218, 218, 0.705);
+  --table-btn-bg: rgba(68, 68, 68, 0.2);
+}
+
+.markdown-rendered table {
+  border-collapse: initial;
+  border-spacing: 0;  
+}
+
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) {
+  --table-white-space: break-all;
+  width: 100%;
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) .table-editor {
+  width: 100%;
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) .table-col-btn {
+  border-top-right-radius: var(--table-radius);
+  border-bottom-right-radius: var(--table-radius);
+  color: var(--table-btn-color);
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) .table-row-btn {
+  border-bottom-left-radius: var(--table-radius);
+  border-bottom-right-radius: var(--table-radius);
+  color: var(--table-btn-color);
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) :is(tr:hover .table-row-drag-handle, th:hover .table-col-drag-handle) {
+  opacity: 1;
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) th:first-child:not(:has(:is(.table-row-drag-handle, .table-col-drag-handle):hover)) {
+  border-top-left-radius: var(--table-radius);
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) th:last-child:not(:has(.table-col-drag-handle:hover)) {
+  border-top-right-radius: var(--table-radius);
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table):has(.table-col-btn:hover) th:last-child {
+  border-top-right-radius: 0;
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) tr:last-child td:first-child {
+  border-bottom-left-radius: var(--table-radius);
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table):has(.table-row-btn:hover) tr:last-child td:first-child {
+  border-bottom-left-radius: 0;
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) tr:last-child td:last-child {
+  border-bottom-right-radius: var(--table-radius);
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table):has(:is(.table-col-btn, .table-row-btn):hover) tr:last-child td:last-child {
+  border-bottom-right-radius: 0;
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) :is(th, td):not(:first-child) {
+  border-left: 0;
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) tbody td {
+  border-top: 0;
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) thead tr {
+  background-color: var(--table-header-bg);
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) tbody tr:nth-of-type(2n) {
+  background-color: var(--table-alt-line-bg);
+}
+:is(.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper, .markdown-rendered table) tbody tr:nth-of-type(2n+1) {
+  background-color: var(--background-primary);
+}
+
+/* 编辑视图 - 单元格高亮 */
+.markdown-source-view.mod-cm6 .cm-table-widget table td:hover,
+.markdown-source-view.mod-cm6 .cm-table-widget table th:hover {
+  background-color: color-mix(in srgb, var(--interactive-accent) 5%, transparent) !important; 
+  cursor: text; 
+}
+body.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget table td:hover,
+body.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget table th:hover {
+  background-color: color-mix(in srgb, var(--interactive-accent) 5%, transparent) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget table td,
+.markdown-source-view.mod-cm6 .cm-table-widget table th {
+  background-color: transparent !important; 
+  transition: background-color 0.2s ease;
+}
+
+/* 阅读视图 - 单元格高亮 */
+.markdown-preview-view table td:hover,
+.markdown-preview-view table th:hover {
+  background-color: color-mix(in srgb, var(--interactive-accent) 5%, transparent) !important;
+  color: var(--text-normal);
+}
+body.theme-dark .markdown-preview-view table td:hover,
+body.theme-dark .markdown-preview-view table th:hover {
+  background-color: color-mix(in srgb, var(--interactive-accent) 5%, transparent) !important;
+}
+
+.markdown-preview-view table td,
+.markdown-preview-view table th {
+  transition: background-color 0.2s ease;
+}
+
+/*--- 表格可拖动大小（不能保存大小） 
+.workspace-leaf-content[data-mode="preview"] .markdown-preview-section table:not(.dataview.table-view-table):active,
+.workspace-leaf-content[data-mode="preview"] .markdown-preview-section table:not(.dataview.table-view-table):hover,
+.workspace-leaf-content[data-mode="preview"] .markdown-rendered table:not(.dataview.table-view-table):active,
+.workspace-leaf-content[data-mode="preview"] .markdown-rendered table:not(.dataview.table-view-table):hover {
+  overflow: hidden;
+  resize: both !important;
+}
+---*/
+
+
+/*--- 列表前缀优化 ---*/
+/* Lists */
+body {
+  --list-indent: 2em;
+  --list-spacing: 0.075em;
+  --list-bullet-border: none;
+  --list-bullet-radius: 50%;
+  --list-bullet-size: 0.3em;
+  --list-bullet-size-alt: calc(var(--list-bullet-size) / 2);
+  --list-bullet-transform: none;
+  --list-numbered-style: decimal;
+}
+  
+.ul-marker-restore .markdown-rendered .has-list-bullet .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::after,
+.ul-marker-restore .markdown-rendered .list-bullet::after,
+.ul-marker-restore .markdown-source-view.mod-cm6 .list-bullet::after {
+  --list-bullet-radius: 50%;
+  --list-bullet-border: calc(var(--list-bullet-size) / 2) solid var(--list-marker-color);
+  width: var(--list-bullet-size-alt);
+  height: var(--list-bullet-size-alt);
+  background-color: transparent;
+}
+  
+.ul-marker-restore .markdown-rendered .has-list-bullet .list-bullet::after,
+.ul-marker-restore .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-1.cm-line div.cm-fold-indicator~span.cm-formatting .list-bullet::after,
+.ul-marker-restore .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-1.cm-line>span.cm-formatting:first-of-type .list-bullet::after {
+  --list-bullet-radius: 50%;
+  --list-bullet-border: none;
+  width: var(--list-bullet-size);
+  height: var(--list-bullet-size);
+  background-color: var(--list-marker-color);
+}
+  
+.ul-marker-restore .markdown-rendered .has-list-bullet .has-list-bullet .list-bullet::after,
+.ul-marker-restore .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-2.cm-line div.cm-fold-indicator~span.cm-formatting .list-bullet::after,
+.ul-marker-restore .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-2.cm-line span.cm-hmd-list-indent~span.cm-formatting .list-bullet::after {
+  --list-bullet-radius: 0;
+  --list-bullet-border: none;
+  width: var(--list-bullet-size);
+  height: var(--list-bullet-size);
+  background-color: var(--list-marker-color);
+}
+  
+.ul-marker-restore .markdown-rendered .has-list-bullet .has-list-bullet .has-list-bullet .list-bullet::after,
+.ul-marker-restore .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-3.cm-line div.cm-fold-indicator~span.cm-formatting .list-bullet::after,
+.ul-marker-restore .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-list-line-3.cm-line span.cm-hmd-list-indent~span.cm-formatting .list-bullet::after {
+  --list-bullet-radius: 0;
+  --list-bullet-transform: rotate(45deg);
+  --list-bullet-border: none;
+  width: var(--list-bullet-size);
+  height: var(--list-bullet-size);
+  background-color: var(--list-marker-color);
+}
+  
+li.is-collapsed .list-bullet:after,
+.is-collapsed~.cm-formatting-list .list-bullet:after {
+  background-color: var(--list-marker-color-collapsed) !important;
+}
+  
+ol>li.is-collapsed::marker,
+ul>li.is-collapsed::marker,
+.cm-s-obsidian .is-collapsed~.cm-formatting-list {
+  color: var(--list-marker-color-collapsed) !important;
+}
+  
+@media (hover: hover) {
+
+  .list-collapse-indicator:hover~.list-bullet:after,
+  .cm-fold-indicator:hover~.list-bullet:after,
+  .list-collapse-indicator:hover~.cm-formatting-list .list-bullet:after,
+  .cm-fold-indicator:hover~.cm-formatting-list .list-bullet:after {
+      background-color: var(--list-marker-color-hover) !important;
+  }
+  
+  li.is-collapsed .list-collapse-indicator:hover~.list-bullet:after,
+  li.is-collapsed .cm-fold-indicator:hover~.list-bullet:after,
+  .list-collapse-indicator:hover.is-collapsed~.list-bullet:after,
+  .cm-fold-indicator:hover.is-collapsed~.list-bullet:after,
+  li.is-collapsed .list-collapse-indicator:hover~.cm-formatting-list .list-bullet:after,
+  li.is-collapsed .cm-fold-indicator:hover~.cm-formatting-list .list-bullet:after,
+  .list-collapse-indicator:hover.is-collapsed~.cm-formatting-list .list-bullet:after,
+  .cm-fold-indicator:hover.is-collapsed~.cm-formatting-list .list-bullet:after {
+      background-color: var(--list-marker-color-collapsed) !important;
+  }
+} 
+
+/*--- 隐藏页内标题 ---*/
+.ycynbt .inline-title {
+  display: none !important;
+}
+
+
+/*--- 美化 iframe 标签 ---*/
+.markdown-preview-view iframe,
+.cm-preview-code-block iframe,
+.markdown-source-view iframe {
+  border: 2px solid var(--background-modifier-border);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px var(--background-modifier-box-shadow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- 亮色主题下：在文件中选中笔记时显示标题的颜色 ---
+.theme-light .tree-item-self.is-active .nav-file-title-content {
+  -webkit-text-fill-color: #000000 !important;
+}
+*/
+
+/*--- 文件笔记标题颜色 ---
+.theme-light .nav-file-title-content {
+  color: #222222 !important;
+}
+.theme-dark .nav-file-title-content {
+  color: #dddddd !important;
+}
+
+.nav-file-title.is-active .nav-file-title-content {
+  color: #ffffff !important;
+}
+
+.theme-dark .dropdown:hover {
+  background-color: var(--background-modifier-form-field);
+}
+
+.theme-dark .nav-file-title-content,
+.theme-dark .nav-folder-title-content {
+  color: #dddddd !important;
+}
+
+.theme-light .nav-file-title-content,
+.theme-light .nav-folder-title-content {
+  color: #222222 !important;
+}
+
+.nav-file-title.is-active .nav-file-title-content,
+.nav-folder-title.is-active .nav-folder-title-content {
+  color: #ffffff !important;
+}
+
+.theme-dark .dropdown:hover {
+  background-color: var(--background-modifier-form-field);
+}
+*/
+
+
+
+
+
+
+/*--- 以下代码摘自 Composer+ ---*/
+
+
+/*--- 默认阅读模式下隐藏文档属性 ---*/ 
+.doc--hide body {
+  --metadata-display-reading: none ;
+}
+
+.doc--hide .workspace-leaf-content[data-mode="preview"]
+:is(.markdown-preview-view,.markdown-rendered)
+.metadata-container{
+  display: none ;
+}
+
+.doc--hide .workspace-leaf-content[data-mode="preview"]
+:is(.markdown-preview-view,.markdown-rendered).show-property
+.metadata-container{
+  display: unset  ;
+}
+
+.doc--hide .workspace-leaf-content[data-mode="source"]
+.markdown-source-view.hide-property
+.metadata-container{
+  display: none ;
+}
+
+.doc--hide :is(.markdown-preview-view,.markdown-rendered) {
+& div[data-property-key="anything_is_ok"] {
+  display:none;
+}
+}
+
+.doc--hide :is(.markdown-preview-view,.markdown-rendered) .metadata-property[data-property-key="cssclasses"],
+.doc--hide :is(.markdown-preview-view,.markdown-rendered) .metadata-property[data-property-key="cssclass"] {
+display: none;
+}
+
+.doc--hide :is(.markdown-preview-view,.markdown-rendered).anything_is_ok {
+& div[data-property-key="anything_is_ok"] {
+  display:none;
+}
+}
+
+.doc--hide :is(.markdown-preview-view,.markdown-rendered).hide-lex .metadata-property[data-property-key="lex"]
+{
+display: none;
+}
+
+.doc--hide .is-live-preview.hide-lex .metadata-property[data-property-key="lex"] {
+display: none;
+}
+
+/* 确保容器正确约束 */
+/* 改进后的CSS代码 */
+
+.doc--ball .workspace-leaf-content {
+position: relative;
+overflow: visible;
+}
+
+.doc--ball .metadata-properties-heading {
+display: none !important;
+}
+
+.doc--ball .🟢 .metadata-container{
+background-color: #56cf8e !important;
+}
+
+.doc--ball .🟡 .metadata-container{
+background-color: #ffce65 !important;
+}
+
+.doc--ball .🟠 .metadata-container{
+background-color: #fc8747 !important;
+}
+
+.doc--ball .🔴 .metadata-container{
+background-color: #ec4558 !important;
+}
+
+.doc--ball .metadata-container {
+position: absolute;
+top: 12px;
+right: 12px;
+width: 36px;
+height: 36px;
+z-index: 100;
+overflow: hidden;
+background: var(--color-accent);
+border-radius: 25%;
+box-shadow: 
+  0 3px 10px rgba(0,0,0,0.1),
+  0 0 0 1px var(--background-modifier-border),
+  inset 0 1px 0 rgba(255,255,255,0.2);
+cursor: pointer;
+transition: 
+  width 0.35s cubic-bezier(0.18, 1.25, 0.4, 1),
+  height 0.35s cubic-bezier(0.18, 1.25, 0.4, 1),
+  border-radius 0.3s ease 0.05s;
+}
+
+.doc--ball .metadata-content {
+opacity: 0;
+padding: 0 !important;
+width: 360px;
+height: auto !important;
+transition: 
+  opacity 0.25s ease 0.1s,
+  padding 0.25s ease 0.1s;
+pointer-events: none;
+position: relative;
+background: var(--background-primary);
+border-radius: 12px;
+max-height: 0;
+overflow: hidden;
+}
+
+/* 悬停和焦点状态 */
+.doc--ball .metadata-container:hover,
+.doc--ball .metadata-container:focus-within,
+.doc--ball .metadata-container.is-active {
+width: 360px;
+height: auto !important;
+border: none !important;
+border-radius: 13px;
+transition-delay: 0s;
+padding: 0 !important;
+margin: 0 !important;
+box-shadow: 
+  0 12px 30px rgba(0, 0, 0, 0.3),
+  inset 0 0 16px rgba(255, 255, 255, 0.3),
+  inset 0 0 2px rgba(255, 255, 255, 0.7);
+}
+
+.doc--ball .metadata-container:hover .metadata-content,
+.doc--ball .metadata-container:focus-within .metadata-content,
+.doc--ball .metadata-container.is-active .metadata-content {
+opacity: 1;
+padding: 20px !important;
+max-height: none !important; /* 限制最大高度避免过度展开 */
+pointer-events: auto;
+transition: 
+  opacity 0.3s ease 0.15s,
+  padding 0.3s ease 0.15s,
+  max-height 0.5s ease;
+}
+
+/* 触发指示器 */
+.doc--ball .metadata-trigger {
+position: absolute;
+top: 0;
+right: 0;
+width: 36px;
+height: 36px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.2);
+z-index: 101;
+pointer-events: none;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: 
+  opacity 0.2s ease, 
+  transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.doc--ball .metadata-trigger::before {
+content: "i";
+font-size: 16px;
+font-weight: 700;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+color: white;
+}
+
+.doc--ball .metadata-container:hover .metadata-trigger,
+.doc--ball .metadata-container:focus-within .metadata-trigger,
+.doc--ball .metadata-container.is-active .metadata-trigger {
+opacity: 0;
+transform: scale(1.5) rotate(90deg);
+}
+
+/* 增强的悬停保护区域 */
+.doc--ball .metadata-container::before {
+content: "";
+position: absolute;
+top: -15px;
+right: -15px;
+bottom: -15px;
+left: -15px;
+z-index: -1;
+pointer-events: auto;
+}
+
+/* 确保子元素不会破坏hover状态 */
+.doc--ball .metadata-content * {
+pointer-events: auto;
+}
+
+/* 移动设备友好优化 */
+@media (max-width: 400px) {
+.doc--ball .metadata-container:hover,
+.doc--ball .metadata-container:focus-within,
+.doc--ball .metadata-container.is-active {
+  width: calc(100vw - 40px);
+  right: 20px;
+}
+
+.doc--ball .metadata-content {
+  width: 100%;
+}
+}
+
+/* 暗色模式优化 */
+.theme-dark .doc--ball .metadata-container {
+box-shadow: 
+  0 3px 15px rgba(0,0,0,0.4),
+  0 0 0 1px var(--background-modifier-border),
+  inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+/* 无障碍访问改进 */
+.doc--ball .metadata-container:focus {
+outline: 2px solid var(--color-accent);
+outline-offset: 2px;
+}
+
+
+/* 图片添加 dark 参数可在深色模式下反色 */
+.theme-dark img[alt*="dark"] {
+  filter: invert(1) hue-rotate(180deg) !important;
+}
+
+.theme-dark .image-embed[src*="#dark"] img {
+  filter: invert(1) hue-rotate(180deg) !important;
+}
+
+
+
+/* Blue Topaz 图片排版方案 (已调整兼容反色参数) */
+/*image position*/
+img[alt$="left"]:not([class*="emoji"]),
+img[alt$="Left"]:not([class*="emoji"]),
+img[alt$="LEFT"]:not([class*="emoji"]),
+img[alt$="L"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="left"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="Left"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="LEFT"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="L"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="left"] img[alt$="left"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="Left"] img[alt$="Left"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="LEFT"] img[alt$="LEFT"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="L"] img[alt$="L"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="left"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="Left"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="LEFT"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="L"]:not([class*="emoji"]) {
+  margin: auto !important;
+  margin-left: 0 !important;
+  display: block;
+}
+
+img[alt$="right"]:not([class*="emoji"]),
+img[alt$="Right"]:not([class*="emoji"]),
+img[alt$="RIGHT"]:not([class*="emoji"]),
+img[alt$="R"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="right"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="Right"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="RIGHT"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="R"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="right"] img[alt$="right"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="Right"] img[alt$="Right"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="RIGHT"] img[alt$="RIGHT"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="R"] img[alt$="R"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="right"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="Right"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="RIGHT"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="R"]:not([class*="emoji"]) {
+  margin: auto !important;
+  margin-right: 0 !important;
+  display: block;
+}
+
+img[alt$="centre"]:not([class*="emoji"]),
+img[alt$="center"]:not([class*="emoji"]),
+img[alt$="CENTRE"]:not([class*="emoji"]),
+img[alt$="CENTER"]:not([class*="emoji"]),
+img[alt$="Center"]:not([class*="emoji"]),
+img[alt$="Centre"]:not([class*="emoji"]),
+img[alt$="C"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="centre"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="center"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="Centre"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="Center"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="CENTRE"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="CENTER"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="C"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="centre"] img[alt$="right"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="center"] img[alt$="Right"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="Centre"] img[alt$="RIGHT"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="Center"] img[alt$="R"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="CENTRE"] img[alt$="Right"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="CENTER"] img[alt$="RIGHT"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="C"] img[alt$="R"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="centre"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="center"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="Centre"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="Center"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="CENTRE"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="CENTER"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="C"]:not([class*="emoji"]) {
+  margin: auto !important;
+  display: block;
+}
+
+img[alt$="inline"]:not([class*="emoji"]),
+img[alt$="Inline"]:not([class*="emoji"]),
+img[alt$="INLINE"]:not([class*="emoji"]),
+img[alt$="inl"]:not([class*="emoji"]),
+img[alt$="INL"]:not([class*="emoji"]),
+img[alt$="Inl"]:not([class*="emoji"]) {
+  display: inline !important;
+  padding: 0.05em 0.05em !important;
+  vertical-align: bottom;
+}
+
+img[alt$="inlineL"]:not([class*="emoji"]),
+img[alt$="InlineL"]:not([class*="emoji"]),
+img[alt$="INLINEL"]:not([class*="emoji"]),
+img[alt$="inlL"]:not([class*="emoji"]),
+img[alt$="INLL"]:not([class*="emoji"]),
+img[alt$="InlL"]:not([class*="emoji"]) {
+  float: left;
+  padding: 0.5em 0.5em 0.5em 0.5em !important;
+}
+
+img[alt$="inlineR"]:not([class*="emoji"]),
+img[alt$="InlineR"]:not([class*="emoji"]),
+img[alt$="INLINER"]:not([class*="emoji"]),
+img[alt$="inlR"]:not([class*="emoji"]),
+img[alt$="INLR"]:not([class*="emoji"]),
+img[alt$="InlR"]:not([class*="emoji"]) {
+  float: right;
+  padding: 0.5em 0.5em 0.5em 0.5em !important;
+}
+
+img.excalidraw-svg-right,
+img.excalidraw-svg-Right,
+img.excalidraw-svg-RIGHT,
+img.excalidraw-svg-R {
+  float: right !important;
+}
+
+img.excalidraw-svg-left,
+img.excalidraw-svg-Left,
+img.excalidraw-svg-LEFT,
+img.excalidraw-svg-L {
+  float: left !important;
+}
+
+img.excalidraw-svg-right,
+img.excalidraw-svg-Right,
+img.excalidraw-svg-RIGHT,
+img.excalidraw-svg-R,
+img.excalidraw-svg-left,
+img.excalidraw-svg-Left,
+img.excalidraw-svg-LEFT,
+img.excalidraw-svg-L {
+  display: table;
+  width: 100%
+}
+
+/*=================图片自适应横排==================/
+/* image-grid-1 */
+/* adapted from https://github.com/Lithou/Sandbox/blob/main/.obsidian/snippets/pub-Image%20Flags.css */
+body span[alt*="+grid"] {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.markdown-source-view.is-live-preview .internal-embed.image-embed.is-loaded[alt*="+grid"] {
+  display: inline-table;
+  vertical-align: middle;
+  max-width: 25%;
+}
+
+/* cssclass: image-grid */
+/* image-grid-2 */
+/* adapted from https://github.com/iEchoxu/obsidian_orange/blob/main/.obsidian/snippets/image-grid.css */
+/* description.zh: 在图片格式里添加 🔸|+grid 使复数的图片排成一行, e.g. ![[*.jpg|+grid]] 。或者在YAML种输入 ❗cssclass：img-grid❗最好安装 Contextual Typography 插件实现更好的并排效果 */
+
+.img-grid :is(.markdown-preview-section,.markdown-rendered)>div>p>.image-embed[alt*="."]:last-child {
+  padding-right: 0;
+}
+.img-grid :is(.markdown-preview-section,.markdown-rendered)>div>p>.image-embed[alt*="."]:first-child {
+  padding-left: 0;
+}
+.img-grid :is(.markdown-preview-section,.markdown-rendered)>div hr {
+  width: 100%;
+}
+.img-grid span.image-embed[alt*="."] {
+  display: table-cell;
+}
+.img-grid img[alt*="."] {
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.img-grid .markdown-preview-section .el-embed-image img:not([width]),.img-grid .markdown-preview-section video{
+  width:100%
+}
+.img-grid .markdown-preview-section>.el-embed-image>p{
+  display:grid;
+  grid-column-gap:0.5rem;
+  grid-row-gap:0;
+  grid-template-columns:repeat(auto-fit,minmax(0,1fr))
+}
+.img-grid .markdown-preview-section>.el-embed-image>p>br{
+  display:none
+}
+.img-grid .markdown-preview-section>.el-embed-image>p>img{
+  object-fit:cover;
+  align-self:stretch
+}
+.img-grid .markdown-preview-section>.el-embed-image>p>.internal-embed img{
+  object-fit:cover;
+  height:100%
+}
+
+.img-grid-ratio .markdown-preview-section>.el-embed-image>p>.internal-embed img
+,.img-grid.img-grid-ratio .markdown-preview-section>.el-embed-image>p>.internal-embed img{
+  object-fit:contain;
+  height:100%;
+  align-self:center
+}
+@media (max-width:400pt){
+  .el-embed-image{
+    margin-top:.25rem
+  }
+  .img-grid .markdown-preview-section>.el-embed-image>p{
+    grid-column-gap:0.25rem
+  }
+}
+
+/*--- CSSCLASSES ---*/
+
+/* 烟花特效 - fireworks */
+.workspace-tabs .workspace-leaf .view-content:has(.fireworks)::before,
+body[data-canvas-path*="Home"] .view-content::before
+{
+  z-index: 99;
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #FFEFAD;
+  right:35%;
+  top: 35%;
+  -webkit-mask: url('https://imgservices-1252317822.image.myqcloud.com/image/081320210201435/e9951400.png') right top no-repeat;
+  -webkit-mask-size: auto 150px;
+  animation: fireworks 3s steps(24) infinite, random 8s steps(1) infinite, random_color 1s infinite;
+}
+
+:is(.markdown-preview-view,.markdown-rendered).fireworks::before,
+body[data-canvas-path*="Home"]  .canvas-wrapper::after {
+  z-index: 99;
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 15%; 
+  top: 5%;
+  background: #FFEFAD;
+ padding-top: 100px; 
+  -webkit-mask: url('https://imgservices-1252317822.image.myqcloud.com/image/081320210201435/e9951400.png') right top no-repeat;
+  -webkit-mask-size: auto 150px;
+  animation: fireworks 2s steps(24) infinite, random 8s steps(1) infinite, random_color 1s infinite;
+}
+@keyframes fireworks {
+  0% {
+      -webkit-mask-position: 0%;
+  }
+  50%,
+  100% {
+      -webkit-mask-position: 100% 100%;
+  }
+}
+
+@keyframes random {
+  0% {
+      transform: translate(0, 0);
+  }
+  25% {
+      transform: translate(200%, 50%) scale(0.8);
+  }
+  50% {
+      transform: translate(80%, 80%) scale(1.2);
+  }
+  75% {
+      transform: translate(20%, 60%) scale(0.65);
+  }
+}
+@keyframes random_color {
+  0% {
+      background-color: #FFEFAD;
+  }
+  25% {
+      background-color: #ffadad;
+  }
+  50% {
+      background-color: #aeadff;
+  }
+  75% {
+      background-color: #adffd9;
+  }
+}
+
+/* 全宽预览 - fullwidth */
+/*主页预览宽度*/
+:is(.markdown-preview-view,.markdown-rendered).fullwidth.is-readable-line-width .markdown-preview-sizer,
+.markdown-source-view.is-readable-line-width.fullwidth .CodeMirror,
+.is-readable-line-width.fullwidth :is(.markdown-preview-section,.markdown-rendered),
+.is-readable-line-width.fullwidth :is(.markdown-preview-section,.markdown-rendered) > div,
+:is(.markdown-preview-view,.markdown-rendered).is-readable-line-width.fullwidth :is(.markdown-preview-section,.markdown-rendered) {
+  width: 100% !important;
+  max-width: 100% !important;
+  /* margin: 0 auto; */
+}
+
+/* 首行缩进 */
+body.text-indentation-two-em .workspace-leaf-content[data-type="markdown"] .markdown-source-view.mod-cm6 div.cm-line:not(:is(.hr,.HyperMD-header,.HyperMD-quote,.HyperMD-list-line)),
+.markdown-source-view.mod-cm6.indent div.cm-line:not(:is(.hr,.HyperMD-header,.HyperMD-quote,.HyperMD-list-line)) {
+  text-indent: 2em;
+}
+
+body.text-indentation-two-em  .workspace-leaf-content[data-type="markdown"]  .markdown-source-view.mod-cm6 div.cm-line:not(:is(.hr,.HyperMD-header,.HyperMD-quote,.HyperMD-list-line)) .cm-hmd-frontmatter:first-of-type,
+.markdown-source-view.mod-cm6.indent div.cm-line:not(:is(.hr,.HyperMD-header,.HyperMD-quote,.HyperMD-list-line)) .cm-hmd-frontmatter:first-of-type {
+  margin-left: -2em;
+}
+body.text-indentation-two-em .markdown-source-view.mod-cm6 div.has-banner.cm-line:not(.HyperMD-header) .cm-def.cm-hmd-frontmatter,
+body.text-indentation-two-em .markdown-source-view.mod-cm6 div.has-banner.cm-line:not(.HyperMD-header) .collapse-indicator,
+.markdown-source-view.mod-cm6.indent div.has-banner.cm-line:not(.HyperMD-header) .cm-def.cm-hmd-frontmatter,
+.markdown-source-view.mod-cm6.indent div.has-banner.cm-line:not(.HyperMD-header) .collapse-indicator {
+  margin-left: 0;
+  left: -3em;
+}
+
+body.text-indentation-two-em [data-type="markdown"] div[class="el-p"]:not(blockquote) > p,
+[data-type="markdown"] :is(.markdown-preview-view,.markdown-rendered).indent div[class="el-p"]:not(blockquote) > p {
+  text-indent: 2em;
+}
+
+body.text-indentation-two-em [data-type="markdown"] div[class="el-p"]:not(blockquote) > p>br,
+[data-type="markdown"] :is(.markdown-preview-view,.markdown-rendered).indent div[class="el-p"]:not(blockquote) >  p>br {
+  content: ' ';
+  white-space: pre;
+  line-height: calc((var(--paragraph-spacing) + 0.3) * 1em);
+  display:unset;
+}
+body.text-indentation-two-em [data-type="markdown"] div[class="el-p"]:not(blockquote) > p>br::after,
+[data-type="markdown"] :is(.markdown-preview-view,.markdown-rendered).indent div[class="el-p"]:not(blockquote) >p>br::after {
+  content: '\A\9\9';
+}
+
+/* 防止首行缩进影响图片 */
+body.text-indentation-two-em [data-type="markdown"] div[class="el-p"]:not(blockquote) > p:has(img:only-child),
+[data-type="markdown"] :is(.markdown-preview-view,.markdown-rendered).indent div[class="el-p"]:not(blockquote) > p:has(img:only-child) {
+  text-indent: 0;
+}
+
+
+/* 全文手写风格字体 
+
+:is(.markdown-preview-view,.markdown-rendered,.cm-line).handwriting.is-readable-line-width .markdown-preview-sizer,
+.markdown-source-view.is-readable-line-width.handwriting .CodeMirror,
+.is-readable-line-width.handwriting :is(.markdown-preview-section,.markdown-rendered,.cm-line),
+.is-readable-line-width.handwriting :is(.markdown-preview-section,.markdown-rendered,.cm-line) > div,
+:is(.markdown-preview-view,.markdown-rendered,.cm-line).is-readable-line-width.handwriting :is(.markdown-preview-section,.markdown-rendered,.cm-line) {
+  font-family: 'Patrick Hand','撒野青春奶酪体';
+}
+
+
+:is(.markdown-preview-view,.markdown-rendered,.cm-line).pinyin.is-readable-line-width .markdown-preview-sizer,
+.markdown-source-view.is-readable-line-width.pinyin .CodeMirror,
+.is-readable-line-width.pinyin :is(.markdown-preview-section,.markdown-rendered,.cm-line),
+.is-readable-line-width.pinyin :is(.markdown-preview-section,.markdown-rendered,.cm-line) > div,
+:is(.markdown-preview-view,.markdown-rendered,.cm-line).is-readable-line-width.pinyin :is(.markdown-preview-section,.markdown-rendered,.cm-line) {
+  font-family: 'Mengshen-Handwritten';
+}
+*/
+
+/* 网格背景 */
+.theme-dark {
+  --grid-line-color-1: #3d3d3f66;
+  --grid-line-color-2: #74747440;
+  --grid-dot-color: #c7c7c71f;
+}
+
+.theme-light {
+  --grid-line-color-1: #c7c7c740;
+  --grid-line-color-2: #afafaf40;
+  --grid-dot-color: #c7c7c780;
+}
+
+/* 网格背景 */
+/* .markdown-reading-view .markdown-rendered, .markdown-source-view.mod-cm6 .cm-scroller, */
+.grid {
+  background-size: 20px 20px;
+  background-position: center center;
+  background-image: linear-gradient(to right, var(--grid-line-color-1) 1px, transparent 1px), linear-gradient(to bottom, var(--grid-line-color-2) 1px, transparent 1px);
+}
+
+
+/* 点阵背景 */
+/* .markdown-reading-view .markdown-rendered, .markdown-source-view.mod-cm6 .cm-scroller, */
+.dot {
+  height: 100%;
+  background-image: radial-gradient(circle, var(--grid-dot-color) 1px, var(--background-primary) 1px);
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+/* 避免 Hover Editor 里奇怪的异常表现 */
+.popover .grid-bg {
+  mask-image: none;
+}
+
+
+/*--- 旁注（由 SideNote Callout 代码片段获得的灵感） ---*/
+@media not print {
+/* 1. 全局变量定义 */
+body {
+  --aside-width: 200px;
+  --aside-offset: 6px;
+  --line-width: var(--file-line-width, 700px);
+  --block-spacing: 0.75rem;
+  --speaker-block-width: 20%;
+}
+
+/* 2. 基础容器与溢出处理 (编辑模式) */
+/* 允许旁注溢出编辑器容器，并隐藏编辑按钮 */
+.markdown-source-view.mod-cm6 .cm-content > .cm-callout:has(.callout[data-callout-metadata*="aside"])[contenteditable="false"],
+.markdown-source-view.mod-cm6 .cm-content > .cm-callout:has(.callout[data-callout-metadata*="aside"])[contenteditable="false"] > .markdown-rendered {
+  contain: none !important;
+  overflow: visible;
+}
+
+.cm-callout:has(.callout[data-callout-metadata*="aside"])[contenteditable="false"] > .edit-block-button {
+  display: none;
+}
+
+/* 3. 上下文定位容器 (源视图/阅读视图) */
+/* 确保父容器支持绝对定位的子元素溢出 */
+:is(.markdown-source-view .cm-callout, div:not([class])):has(> .callout[data-callout-metadata*="aside"]),
+.markdown-reading-view div:has(> .callout[data-callout-metadata*="aside"]) {
+  position: relative;
+  overflow: visible;
+}
+
+/* 4. 旁注核心样式 (绝对定位 + 网格布局) */
+:is(.markdown-source-view, .markdown-reading-view, .markdown-preview-view) 
+.callout[data-callout-metadata*="aside"] {
+  position: absolute; 
+  margin: 0;
+  padding: 0;
+  display: grid;
+  width: var(--aside-width) !important; 
+  grid-template-columns: var(--speaker-block-width) calc(100% - var(--speaker-block-width));
+  background-color: var(--background-primary) !important;
+  border: none;
+}
+
+/* 5. 左右位置计算 */
+/* 左侧旁注 */
+:is(.markdown-source-view, .markdown-reading-view) .callout[data-callout-metadata*="aside-l"] {
+  left: calc(-1 * (var(--aside-width) + var(--aside-offset)));
+  right: auto !important;
+}
+
+/* 右侧旁注 */
+:is(.markdown-source-view, .markdown-reading-view) .callout[data-callout-metadata*="aside-r"] {
+  right: calc(-1 * var(--aside-width) - var(--aside-offset));
+  left: auto !important;
+}
+
+/* 6. 标题区域样式 */
+/* 基础标题调整 */
+:is(.markdown-preview-view, .markdown-source-view.mod-cm6) 
+.callout[data-callout-metadata*="aside"] .callout-title {
+  border-bottom: none !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  display: inline-block;
+}
+
+/* 标题内部文本样式 */
+.callout[data-callout-metadata*="aside"] .callout-title-inner {
+  font-weight: var(--bold-weight) !important;
+  color: rgb(var(--callout-color)) !important;
+  width: auto;               
+  min-width: 1ch;            
+  margin: 0 auto;            
+  text-align: center;        
+  display: block;
+}
+
+/* 根据左右位置微调标题边距 */
+.l-left-callout-title .callout[data-callout-metadata*="aside-l"] .callout-title-inner,
+.r-left-callout-title .callout[data-callout-metadata*="aside-r"] .callout-title-inner {
+  margin-left: var(--block-spacing);
+}
+
+.l-right-callout-title .callout[data-callout-metadata*="aside-l"] .callout-title-inner,
+.r-right-callout-title .callout[data-callout-metadata*="aside-r"] .callout-title-inner {
+  margin: 0 var(--block-spacing);
+}
+
+/* 隐藏图标和折叠箭头 (可选类控制) */
+.callout[data-callout-metadata*="aside"] > .callout-title > .callout-icon {
+  display: none;
+}
+
+.callout[data-callout-metadata*="aside"] .callout-fold {
+  display: none;
+}
+
+/* 折叠按钮居中与尺寸 */
+.callout[data-callout-metadata*="aside"] > .callout-title > .callout-fold,
+.callout[data-callout-metadata*="aside"] > .callout-title > .callout-fold.is-collapsed {
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;     
+  min-height: 24px;    
+}
+
+/* 7. 内容区域样式 */
+/* 通用间距 */
+.callout[data-callout-metadata*="aside"] > * {
+  margin-top: var(--block-spacing);
+}
+
+/* 内容块：限制高度与滚动条 */
+.callout[data-callout-metadata*="aside"] > .callout-content {
+  padding: 0 var(--block-spacing);
+  border-top: unset;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.callout[data-callout-metadata*="aside"] > .callout-content > p:first-child {
+  margin-top: 3px;
+}
+
+/* 滚动条样式：默认透明，悬停显示 */
+.callout[data-callout-metadata*="aside"] > .callout-content::-webkit-scrollbar-thumb {
+  width: 11px;
+  height: 11px;
+  background-color: transparent !important;
+}
+
+.callout[data-callout-metadata*="aside"] > .callout-content:hover::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg) !important;
+}
+
+/* 非顶部标题模式：内容自动高度，无限制 */
+body:not(.top-sidenote-callout-title) .callout[data-callout-metadata*="aside"] > .callout-content {
+  max-height: none !important; 
+  height: auto !important;   
+  transition: max-width 0.25s linear, opacity 0.25s linear, padding 0.25s linear;
+  max-width: 100%; 
+  opacity: 1;  
+  overflow-x: hidden; /* 修正原代码 typo: overflow-x */
+}
+
+/* 在非顶部标题模式下，彻底移除旁注 Callout 的阴影 */
+body:not(.top-sidenote-callout-title) 
+.callout[data-callout-metadata*="aside"] {
+  box-shadow: none !important;
+}
+
+/* 8. 折叠状态样式 */
+/* 普通视图下的折叠标题圆角 */
+:is(.markdown-source-view, .markdown-preview-view, .markdown-reading-view) 
+.callout[data-callout-metadata*="aside"].is-collapsed .callout-title {
+  border-radius: 6px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+/* 强制非顶部标题模式下，折叠后的标题宽度为 0 
+body:not(.top-sidenote-callout-title) 
+:is(.markdown-preview-view, .markdown-source-view.mod-cm6) 
+.callout[data-callout-metadata*="aside"].is-collapsed .callout-title {
+  width: 0 !important;
+}*/
+
+/* 非顶部标题模式折叠时去除阴影 */
+body:not(.top-sidenote-callout-title) .callout[data-callout-metadata*="aside"].is-collapsed {
+  box-shadow: none !important;
+}
+
+body:not(.top-sidenote-callout-title) 
+.callout[data-callout-metadata*="aside"]:hover {
+  box-shadow: none !important;
+}
+
+/* 折叠指示线 */
+
+body:not(.top-sidenote-callout-title) 
+.callout[data-callout-metadata*="aside"] .callout-title {
+  position: relative;
+}
+
+/* 指示线样式 (默认隐藏) */
+body:not(.top-sidenote-callout-title) 
+.callout[data-callout-metadata*="aside"] .callout-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 3px;
+  height: 70%;
+  
+  background-color: #808080; 
+  border-radius: 1.5px;
+  
+  opacity: 0;         
+  pointer-events: none;
+  transition: opacity 0.2s ease; 
+}
+
+body:not(.top-sidenote-callout-title) 
+.callout[data-callout-metadata*="aside"].is-collapsed .callout-title::after {
+  opacity: 0.25; 
+}
+
+body:not(.top-sidenote-callout-title) 
+.callout[data-callout-metadata*="aside"].is-collapsed .callout-title {
+  min-width: 6px !important; 
+}
+
+/* 9. 横排模式 (.top-sidenote-callout-title) 折叠指示线 */
+
+/* 设置标题为相对定位，并在上方预留空间 */
+body.top-sidenote-callout-title 
+.callout[data-callout-metadata*="aside"] .callout-title {
+  position: relative;
+  padding-top: 8px !important; 
+}
+
+/* 指示线样式 (默认隐藏) */
+body.top-sidenote-callout-title 
+.callout[data-callout-metadata*="aside"] .callout-title::after {
+  content: "";
+  position: absolute;
+  top: 0;         
+  width: 110px;     
+  height: 3px;           
+  
+  left: 50%;
+  transform: translateX(-50%); 
+
+  background-color: #808080; 
+  border-radius: 1.5px;  
+  
+  opacity: 0;          
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* 仅折叠时显示线条 */
+body.top-sidenote-callout-title 
+.callout[data-callout-metadata*="aside"].is-collapsed .callout-title::after {
+  opacity: 0.25;         
+}
+
+:is(.markdown-source-view, .markdown-preview-view, .markdown-reading-view) .callout[data-callout-metadata*="aside"] .callout-content { position: relative; }
+
+:is(.markdown-source-view, .markdown-preview-view, .markdown-reading-view) .callout[data-callout-metadata*="aside"]:not(.is-collapsed):has(.callout-fold) .callout-content::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--text-muted);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+:is(.markdown-source-view, .markdown-preview-view, .markdown-reading-view) .callout[data-callout-metadata*="aside"]:not(.is-collapsed):has(.callout-fold):hover .callout-content::after {
+  opacity: 0.25;
+}
+
+/* 顶部标题 (Top Sidenote Title) */
+
+/* 覆盖标题为 Flex 布局 */
+.top-sidenote-callout-title .callout[data-callout-metadata*="aside"] .callout-title {
+  display: flex;
+  grid-template-columns: unset;
+}
+
+.top-sidenote-callout-title .callout[data-callout-metadata*="aside"] .callout-title-inner {
+  width: unset;
+}
+
+/* 强制绝对定位与层级 */
+.top-sidenote-callout-title .callout[data-callout-metadata*="aside"] {
+  position: absolute !important;
+  width: var(--aside-width) !important;
+  display: block !important;
+  z-index: 10;
+}
+
+/* 标题垂直居中布局 */
+.top-sidenote-callout-title .callout[data-callout-metadata*="aside"] .callout-title {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+
+.top-sidenote-callout-title .callout[data-callout-metadata*="aside"] .callout-title-inner {
+  width: auto !important;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* 内容区域全宽显示 */
+.top-sidenote-callout-title .callout[data-callout-metadata*="aside"] > .callout-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 var(--block-spacing);
+  max-width: 100% !important; 
+  opacity: 1 !important;
+  max-height: none !important;
+}
+
+/* 顶部标题模式下的折叠动画与样式 */
+.top-sidenote-callout-title .callout[data-callout-metadata*="aside"].is-collapsed .callout-title {
+  border-radius: 6px !important;
+}
+
+.top-sidenote-callout-title .callout[data-callout-metadata*="aside"].is-collapsed > .callout-content {
+  max-height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  opacity: 0 !important;
+  max-width: 100% !important; 
+}
+
+}
+
+/* 打印样式 */
+@media print {
+  .callout[data-callout-metadata*="aside"] .callout-title {
+    position: relative !important;
+  }
+
+  .callout[data-callout-metadata*="aside"] .callout-title::after {
+    content: "旁注" !important;
+    position: absolute !important;
+    right: 7px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    
+    background-color: rgba(var(--callout-color, 100, 100, 100), 0.3) !important;
+    color: rgb(var(--callout-color, 0, 0, 0)) !important;
+    
+    font-size: 0.75em !important;
+    font-weight: bold !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    
+    white-space: nowrap !important;
+    pointer-events: none !important;
+    opacity: 1 !important;
+    display: block !important;
+  }
+}
+
+
+
+
+
+/* ----------------------------------------
+Atom 主题的一些代码
+---------------------------------------- */
+
+/* 搜索 */
+.search-result .search-result-file-title {
+  cursor: pointer;
+}
+
+.search-result .collapse-icon {
+  cursor: var(--cursor);
+}
+
+/* 搜索中的一些文字的颜色
+.search-result:not(.is-collapsed) .search-result-file-title {
+  color: #3c95e7;
+}
+*/
+
+/* 文件标签分隔符 */
+.workspace .mod-root .workspace-tab-header-inner::after {
+  right: unset;
+  left: -0.5px;
+}
+
+.workspace .mod-root .workspace-tab-header:last-child .workspace-tab-header-inner::before {
+  position: absolute;
+  right: -0.5px;
+  width: 1px;
+  background-color: var(--tab-divider-color);
+  content: '';
+  height: 20px;
+}
+
+.workspace .mod-root  .workspace-tab-header.is-active .workspace-tab-header-inner::after,
+.workspace .mod-root  .workspace-tab-header.is-active .workspace-tab-header-inner::before,
+.workspace .mod-root  .workspace-tab-header:first-child .workspace-tab-header-inner::after,
+.workspace .mod-root  .workspace-tab-header.is-active + .workspace-tab-header .workspace-tab-header-inner::after {
+  opacity: 0;
+}
+
+
+/* 编辑器和输出 */
+.markdown-rendered blockquote {
+  padding: var(--embed-padding);
+}
+
+mjx-container {
+  text-align: left !important;
+}
+
+.math-block {
+  font-size: 1.3em;
+}
+
+.theme-light :not(pre)>code,
+.theme-light pre {
+  background: var(--background-primary);
+  box-shadow: inset 0 0 0 1px var(--background-primary-alt);
+  border-radius: 4px;
+}
+
+.cm-sizer > .inline-title {
+  margin-bottom: 20px;
+}
+
+
+/* 杂项 */
+.tooltip {
+  color: #eeeeee;
+} /* 鼠标悬停时出现的提示框的文字颜色 */
+
+.nav-file, .nav-folder {
+  padding: 1px 2px;
+}
+
+body:not(.is-grabbing) .nav-file-title.is-being-dragged,
+body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
+.nav-file-title.is-being-dragged,
+.nav-folder-title.is-being-dragged {
+  background-color: var(--background-primary-alt);
+  color: var(--nav-item-color);
+}
+
+.view-header-title {
+  text-decoration: underline;
+  text-decoration-color: var(--text-muted);
+  text-underline-offset: 1.5px;
+}
+
+.status-bar {
+  border-color: var(--panel-border-color);
+  border-width: 1px;
+  padding: 4px 8px;
+}
+
+.theme-dark button.mod-warning {
+  --background-modifier-error: #d42020;
+  --background-modifier-error-hover: #b01515;
+}
+
+.theme-light button.mod-warning {
+  --background-modifier-error: #f23f3f;
+  --background-modifier-error-hover: #d72020;
+}
+
+
+
+
+
+
+
+
+
+
